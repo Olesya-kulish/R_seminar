@@ -1,0 +1,1689 @@
+  [1] "histid1930"                      "histid1940"                     
+  [3] "clp_30_40"                       "mlp_30_40"                      
+  [5] "xgb_30_40"                       "family_tree_30_40"              
+  [7] "direct_hint_30_40"               "profile_hint"                   
+  [9] "implied_30_40"                   "year1930"                       
+ [11] "sample1930"                      "serial1930"                     
+ [13] "hhwt1930"                        "region1930"                     
+ [15] "stateicp1930"                    "statefip1930"                   
+ [17] "countyicp1930"                   "city_1930"                      
+ [19] "citypop1930"                     "gq1930"                         
+ [21] "ownershp1930"                    "ownershpd1930"                  
+ [23] "rent301930"                      "valueh1930"                     
+ [25] "radio301930"                     "pernum1930"                     
+ [27] "perwt1930"                       "nchild1930"                     
+ [29] "sex1930"                         "age1930"                        
+ [31] "marst1930"                       "race1930"                       
+ [33] "raced1930"                       "hispan1930"                     
+ [35] "hispand1930"                     "bpl1930"                        
+ [37] "bpld1930"                        "nativity1930"                   
+ [39] "citizen1930"                     "yrimmig1930"                    
+ [41] "lit1930"                         "empstat1930"                    
+ [43] "empstatd1930"                    "labforce1930"                   
+ [45] "classwkr1930"                    "classwkrd1930"                  
+ [47] "occ19501930"                     "ind19501930"                    
+ [49] "occscore1930"                    "versionhist1930"                
+ [51] "year1940"                        "sample1940"                     
+ [53] "serial1940"                      "hhwt1940"                       
+ [55] "region1940"                      "stateicp1940"                   
+ [57] "statefip1940"                    "countyicp1940"                  
+ [59] "city1940"                        "citypop1940"                    
+ [61] "gq1940"                          "ownershp1940"                   
+ [63] "ownershpd1940"                   "pernum1940"                     
+ [65] "perwt1940"                       "nchild1940"                     
+ [67] "sex1940"                         "age1940"                        
+ [69] "marst1940"                       "race1940"                       
+ [71] "raced1940"                       "hispan1940"                     
+ [73] "hispand1940"                     "bpl1940"                        
+ [75] "bpld1940"                        "nativity1940"                   
+ [77] "citizen1940"                     "school1940"                     
+ [79] "higrade1940"                     "higraded1940"                   
+ [81] "educ1940"                        "educd1940"                      
+ [83] "empstat1940"                     "empstatd1940"                   
+ [85] "labforce1940"                    "classwkr1940"                   
+ [87] "classwkrd1940"                   "occ19501940"                    
+ [89] "ind19501940"                     "wkswork11940"                   
+ [91] "wkswork21940"                    "hrswork11940"                   
+ [93] "hrswork21940"                    "incwage1940"                    
+ [95] "incnonwg1940"                    "occscore1940"                   
+ [97] "migrate51940"                    "migrate5d1940"                  
+ [99] "migplac51940"                    "migmet51940"                    
+[101] "migtype51940"                    "migcity51940"                   
+[103] "migsea51940"                     "sameplac1940"                   
+[105] "versionhist1940"                 "samesea51940"                   
+[107] "migcounty1940"                   "keep_bool"                      
+[109] "id"                              "city_1940"                      
+[111] "city_1935"                       "year"                           
+[113] "state"                           "source"                         
+[115] "RFC"                             "WPA"                            
+[117] "RELIEF"                          "RLDF3329"                       
+[119] "pop_30"                          "pop_20_30"                      
+[121] "delta_loan_31_29"                "delta_loan_31_29_tr"            
+[123] "region"                          "connect_to_nyc"                 
+[125] "connect_to_chi"                  "connect_to_cle"                 
+[127] "connect_with_2_banks"            "hist_mean_ir"                   
+[129] "hist_mean_ir_w"                  "share_1925_1929_t"              
+[131] "share_1920_1924_t"               "share_1915_1919_t"              
+[133] "share_1900_1915_t"               "years_since_w"                  
+[135] "check_moody"                     "pop_i"                          
+[137] "default_city"                    "default"                        
+[139] "mill_rate_total"                 "bond_rate"                      
+[141] "pc_rev_tax"                      "real_rev_tax"                   
+[143] "real_pc_rev_tax"                 "real_pc_rev_tax_log"            
+[145] "pc_rev_nontax"                   "real_rev_nontax"                
+[147] "real_pc_rev_nontax"              "real_pc_rev_nontax_log"         
+[149] "pc_rev_ig"                       "real_rev_ig"                    
+[151] "real_pc_rev_ig"                  "real_pc_rev_ig_log"             
+[153] "pc_rev_debt"                     "real_rev_debt"                  
+[155] "real_pc_rev_debt"                "real_pc_rev_debt_log"           
+[157] "pc_rev_nontax_nondebt"           "real_rev_nontax_nondebt"        
+[159] "real_pc_rev_nontax_nondebt"      "real_pc_rev_nontax_nondebt_log" 
+[161] "pc_maint_dep_gen"                "real_maint_dep_gen"             
+[163] "real_pc_maint_dep_gen"           "real_pc_maint_dep_gen_log"      
+[165] "pc_maint_dep_health"             "real_maint_dep_health"          
+[167] "real_pc_maint_dep_health"        "real_pc_maint_dep_health_log"   
+[169] "pc_maint_dep_road"               "real_maint_dep_road"            
+[171] "real_pc_maint_dep_road"          "real_pc_maint_dep_road_log"     
+[173] "pc_maint_dep_pp"                 "real_maint_dep_pp"              
+[175] "real_pc_maint_dep_pp"            "real_pc_maint_dep_pp_log"       
+[177] "pc_maint_dep_charity"            "real_maint_dep_charity"         
+[179] "real_pc_maint_dep_charity"       "real_pc_maint_dep_charity_log"  
+[181] "pc_maint_dep_rec"                "real_maint_dep_rec"             
+[183] "real_pc_maint_dep_rec"           "real_pc_maint_dep_rec_log"      
+[185] "pc_maint_dep_school"             "real_maint_dep_school"          
+[187] "real_pc_maint_dep_school"        "real_pc_maint_dep_school_log"   
+[189] "pc_maint_dep_other"              "real_maint_dep_other"           
+[191] "real_pc_maint_dep_other"         "real_pc_maint_dep_other_log"    
+[193] "pc_pse"                          "real_pse"                       
+[195] "real_pc_pse"                     "real_pc_pse_log"                
+[197] "pc_outlay"                       "real_outlay"                    
+[199] "real_pc_outlay"                  "real_pc_outlay_log"             
+[201] "pc_interest"                     "real_interest"                  
+[203] "real_pc_interest"                "real_pc_interest_log"           
+[205] "pc_repay_debt"                   "real_repay_debt"                
+[207] "real_pc_repay_debt"              "real_pc_repay_debt_log"         
+[209] "pc_pay_other"                    "real_pay_other"                 
+[211] "real_pc_pay_other"               "real_pc_pay_other_log"          
+[213] "pc_debt_bond"                    "real_debt_bond"                 
+[215] "real_pc_debt_bond"               "real_pc_debt_bond_log"          
+[217] "pc_debt_total"                   "real_debt_total"                
+[219] "real_pc_debt_total"              "real_pc_debt_total_log"         
+[221] "pc_debt_temp"                    "real_debt_temp"                 
+[223] "real_pc_debt_temp"               "real_pc_debt_temp_log"          
+[225] "pc_assess_total"                 "real_assess_total"              
+[227] "real_pc_assess_total"            "real_pc_assess_total_log"       
+[229] "pc_maint_dep_total"              "real_maint_dep_total"           
+[231] "real_pc_maint_dep_total"         "real_pc_maint_dep_total_log"    
+[233] "pc_rev_total"                    "real_rev_total"                 
+[235] "real_pc_rev_total"               "real_pc_rev_total_log"          
+[237] "pc_maint_outlay"                 "real_maint_outlay"              
+[239] "real_pc_maint_outlay"            "real_pc_maint_outlay_log"       
+[241] "pop_i_k"                         "bonds_to_assess"                
+[243] "int_to_rev"                      "debt_to_rev"                    
+[245] "WPA_pc"                          "RFC_pc"                         
+[247] "RELIEF_pc"                       "bonds_to_assess29_lev"          
+[249] "int_to_rev29_lev"                "debt_to_rev29_lev"              
+[251] "temp_to_bonds29_lev"             "debt_total29_lev"               
+[253] "bonds_to_assess24_lev"           "int_to_rev24_lev"               
+[255] "debt_to_rev24_lev"               "temp_to_bonds24_lev"            
+[257] "debt_total24_lev"                "gd_shock"                       
+[259] "bta_moody"                       "itr_moody"                      
+[261] "dtr_moody"                       "dt_moody"                       
+[263] "gd_shock_q"                      "bank_shock"                     
+[265] "bank_shock_any"                  "bank_shock_median"              
+[267] "connect"                         "rating_int"                     
+[269] "rating_int2"                     "source_"                        
+[271] "delta_loan_31_29_q"              "state_"                         
+[273] "region_"                         "post_detail"                    
+[275] "city_age"                        "outlay_24_29"                   
+[277] "outlay_24_29_q"                  "pc_total_num_nonhouse_21_29"    
+[279] "pc_total_usd_nonhouse_21_29"     "pc_total_num_pub_21_29"         
+[281] "pc_total_usd_pub_21_29"          "pc_total_num_house_21_29"       
+[283] "pc_total_usd_house_21_29"        "pc_total_n_fam_21_29"           
+[285] "pop_cat"                         "id_"                            
+[287] "pc_outlay_24_29"                 "pc_repay_debt_24_29"            
+[289] "outlay_24_29_std"                "pc_outlay_24_29_std"            
+[291] "pc_repay_debt_24_29_std"         "counter"                        
+[293] "bonds_to_assess29_lev_std"       "int_to_rev29_lev_std"           
+[295] "debt_to_rev29_lev_std"           "temp_to_bonds29_lev_std"        
+[297] "debt_total29_lev_std"            "bonds_to_assess24_lev_std"      
+[299] "int_to_rev24_lev_std"            "debt_to_rev24_lev_std"          
+[301] "temp_to_bonds24_lev_std"         "debt_total24_lev_std"           
+[303] "bonds_to_assess29_lev_moody_std" "int_to_rev29_lev_moody_std"     
+[305] "debt_to_rev29_lev_moody_std"     "debt_total29_lev_moody_std"     
+[307] "pop_i_std"                       "pc_assess_total_std"            
+[309] "RLDF3329_std"                    "pop_30_std"                     
+[311] "check_moody_std"                 "bta_moody_std"                  
+[313] "itr_moody_std"                   "dtr_moody_std"                  
+[315] "dt_moody_std"                    "is_local_admin_30"              
+[317] "is_local_admin_40"               "left_public"                    
+[319] "age2"                            "age3"                           
+[321] "age4"                            "enter_public"                   
+[323] "enter_anything"                  "ind_change"                     
+[325] "stay_public"                     "in_public_30"                   
+[327] "in_public_40"                    "move"                           
+[329] "stayer"                          "job_changer"                    
+[331] "blow_it_up"                      "opportunity"                    
+[333] "stayer_all"                      "job_changer_all"                
+[335] "blow_it_up_all"                  "opportunity_all"                
+[337] "stay_public_nomove"              "status"                         
+[339] "status_all"                      "wage_week"                      
+[341] "log_wage"                        "educ_cont"                      
+[343] "exp"                             "exp2"                           
+[345] "log_occscore_30"                 "log_occscore_40"                
+[347] "log_occscore_change"             "gd_cohort"                      
+[349] "is_utility"                      "probit_w"                       
+[351] "xtile30"                         "xtile40"                        
+[353] "xtile_change"                    "log_occscore_change_tr"         
+[355] "xtile_change_tr"                    histid1930         histid1940          clp_30_40        mlp_30_40     
+ Length:319663      Length:319663      Min.   :0.0000   Min.   :0.0000  
+ Class :character   Class :character   1st Qu.:0.0000   1st Qu.:0.0000  
+ Mode  :character   Mode  :character   Median :0.0000   Median :1.0000  
+                                       Mean   :0.2516   Mean   :0.5712  
+                                       3rd Qu.:1.0000   3rd Qu.:1.0000  
+                                       Max.   :1.0000   Max.   :1.0000  
+                                                                        
+   xgb_30_40      family_tree_30_40 direct_hint_30_40  profile_hint   
+ Min.   :0.0000   Min.   :0.000     Min.   :0.0000    Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.000     1st Qu.:0.0000    1st Qu.:0.0000  
+ Median :1.0000   Median :0.000     Median :1.0000    Median :0.0000  
+ Mean   :0.7331   Mean   :0.308     Mean   :0.6286    Mean   :0.4059  
+ 3rd Qu.:1.0000   3rd Qu.:1.000     3rd Qu.:1.0000    3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.000     Max.   :1.0000    Max.   :1.0000  
+                                                                      
+ implied_30_40       year1930      sample1930       serial1930      
+ Min.   :0.0000   Min.   :1930   Min.   :193004   Min.   :  169421  
+ 1st Qu.:1.0000   1st Qu.:1930   1st Qu.:193004   1st Qu.: 5661168  
+ Median :1.0000   Median :1930   Median :193004   Median :11969951  
+ Mean   :0.7713   Mean   :1930   Mean   :193004   Mean   :13886088  
+ 3rd Qu.:1.0000   3rd Qu.:1930   3rd Qu.:193004   3rd Qu.:22219682  
+ Max.   :1.0000   Max.   :1930   Max.   :193004   Max.   :31312859  
+                                                                    
+    hhwt1930   region1930     stateicp1930    statefip1930   countyicp1930   
+ Min.   :1   Min.   :11.00   Min.   : 1.00   Min.   : 1.00   Min.   :  10.0  
+ 1st Qu.:1   1st Qu.:12.00   1st Qu.:14.00   1st Qu.:17.00   1st Qu.: 270.0  
+ Median :1   Median :21.00   Median :24.00   Median :25.00   Median : 390.0  
+ Mean   :1   Mean   :23.66   Mean   :32.22   Mean   :26.95   Mean   : 870.7  
+ 3rd Qu.:1   3rd Qu.:32.00   3rd Qu.:51.00   3rd Qu.:39.00   3rd Qu.:1010.0  
+ Max.   :1   Max.   :42.00   Max.   :98.00   Max.   :55.00   Max.   :7600.0  
+                                                                             
+   city_1930     citypop1930        gq1930       ownershp1930   ownershpd1930  
+ Min.   :   5   Min.   :    0   Min.   :1.000   Min.   :0.000   Min.   : 0.00  
+ 1st Qu.:1452   1st Qu.: 1111   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:10.00  
+ Median :3730   Median : 2923   Median :1.000   Median :1.000   Median :10.00  
+ Mean   :3643   Mean   : 7208   Mean   :1.112   Mean   :1.424   Mean   :14.24  
+ 3rd Qu.:5370   3rd Qu.: 8219   3rd Qu.:1.000   3rd Qu.:2.000   3rd Qu.:20.00  
+ Max.   :7650   Max.   :33764   Max.   :4.000   Max.   :2.000   Max.   :20.00  
+                                                                               
+   rent301930     valueh1930       radio301930      pernum1930       perwt1930
+ Min.   :   0   Min.   :      0   Min.   :1.000   Min.   : 1.000   Min.   :1  
+ 1st Qu.:   0   1st Qu.:      0   1st Qu.:1.000   1st Qu.: 1.000   1st Qu.:1  
+ Median :   0   Median :   2500   Median :2.000   Median : 1.000   Median :1  
+ Mean   : 242   Mean   : 393668   Mean   :1.646   Mean   : 2.244   Mean   :1  
+ 3rd Qu.:  37   3rd Qu.:   7000   3rd Qu.:2.000   3rd Qu.: 3.000   3rd Qu.:1  
+ Max.   :9999   Max.   :9999999   Max.   :2.000   Max.   :60.000   Max.   :1  
+                                                                              
+   nchild1930        sex1930         age1930        marst1930    
+ Min.   :0.0000   Min.   :1.000   Min.   :22.00   Min.   :1.000  
+ 1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:29.00   1st Qu.:1.000  
+ Median :0.0000   Median :1.000   Median :36.00   Median :1.000  
+ Mean   :0.9418   Mean   :1.406   Mean   :37.58   Mean   :3.034  
+ 3rd Qu.:2.0000   3rd Qu.:2.000   3rd Qu.:45.00   3rd Qu.:6.000  
+ Max.   :9.0000   Max.   :2.000   Max.   :60.00   Max.   :6.000  
+                                                                 
+    race1930       raced1930       hispan1930        hispand1930     
+ Min.   :1.000   Min.   :100.0   Min.   :0.000000   Min.   :  0.000  
+ 1st Qu.:1.000   1st Qu.:100.0   1st Qu.:0.000000   1st Qu.:  0.000  
+ Median :1.000   Median :100.0   Median :0.000000   Median :  0.000  
+ Mean   :1.033   Mean   :103.3   Mean   :0.009998   Mean   :  1.087  
+ 3rd Qu.:1.000   3rd Qu.:100.0   3rd Qu.:0.000000   3rd Qu.:  0.000  
+ Max.   :6.000   Max.   :600.0   Max.   :4.000000   Max.   :480.000  
+                                                                     
+    bpl1930          bpld1930      nativity1930    citizen1930    
+ Min.   :  1.00   Min.   :  100   Min.   :1.000   Min.   :0.0000  
+ 1st Qu.: 20.00   1st Qu.: 2000   1st Qu.:1.000   1st Qu.:0.0000  
+ Median : 29.00   Median : 2900   Median :1.000   Median :0.0000  
+ Mean   : 61.68   Mean   : 6168   Mean   :2.129   Mean   :0.2058  
+ 3rd Qu.: 42.00   3rd Qu.: 4200   3rd Qu.:4.000   3rd Qu.:0.0000  
+ Max.   :900.00   Max.   :90020   Max.   :5.000   Max.   :4.0000  
+                                                                  
+  yrimmig1930        lit1930       empstat1930     empstatd1930  
+ Min.   :   0.0   Min.   :1.000   Min.   :1.000   Min.   :10.00  
+ 1st Qu.:   0.0   1st Qu.:4.000   1st Qu.:1.000   1st Qu.:10.00  
+ Median :   0.0   Median :4.000   Median :1.000   Median :10.00  
+ Mean   : 170.8   Mean   :3.979   Mean   :1.037   Mean   :10.37  
+ 3rd Qu.:   0.0   3rd Qu.:4.000   3rd Qu.:1.000   3rd Qu.:10.00  
+ Max.   :1930.0   Max.   :4.000   Max.   :3.000   Max.   :30.00  
+                                                                 
+  labforce1930    classwkr1930   classwkrd1930    occ19501930     ind19501930 
+ Min.   :1.000   Min.   :0.000   Min.   : 0.00   Min.   :  0.0   Min.   :888  
+ 1st Qu.:2.000   1st Qu.:2.000   1st Qu.:20.00   1st Qu.: 93.0   1st Qu.:888  
+ Median :2.000   Median :2.000   Median :20.00   Median :290.0   Median :888  
+ Mean   :1.997   Mean   :1.919   Mean   :19.25   Mean   :406.1   Mean   :909  
+ 3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:20.00   3rd Qu.:764.0   3rd Qu.:936  
+ Max.   :2.000   Max.   :2.000   Max.   :29.00   Max.   :984.0   Max.   :936  
+                                                                              
+  occscore1930  versionhist1930    year1940      sample1940    
+ Min.   : 0.0   Min.   :2       Min.   :1940   Min.   :194002  
+ 1st Qu.:24.0   1st Qu.:2       1st Qu.:1940   1st Qu.:194002  
+ Median :27.0   Median :2       Median :1940   Median :194002  
+ Mean   :27.1   Mean   :2       Mean   :1940   Mean   :194002  
+ 3rd Qu.:32.0   3rd Qu.:2       3rd Qu.:1940   3rd Qu.:194002  
+ Max.   :80.0   Max.   :2       Max.   :1940   Max.   :194002  
+                                                               
+   serial1940          hhwt1940   region1940     stateicp1940    statefip1940  
+ Min.   :    8837   Min.   :1   Min.   :11.00   Min.   : 1.00   Min.   : 1.00  
+ 1st Qu.: 8257702   1st Qu.:1   1st Qu.:12.00   1st Qu.:14.00   1st Qu.:17.00  
+ Median :14461819   Median :1   Median :21.00   Median :24.00   Median :25.00  
+ Mean   :17022607   Mean   :1   Mean   :23.75   Mean   :32.39   Mean   :26.99  
+ 3rd Qu.:27029600   3rd Qu.:1   3rd Qu.:32.00   3rd Qu.:51.00   3rd Qu.:39.00  
+ Max.   :37780660   Max.   :1   Max.   :42.00   Max.   :98.00   Max.   :56.00  
+                                                                               
+ countyicp1940       city1940     citypop1940        gq1940       ownershp1940 
+ Min.   :  10.0   Min.   :   0   Min.   :    0   Min.   :1.000   Min.   :0.00  
+ 1st Qu.: 270.0   1st Qu.:1190   1st Qu.:  549   1st Qu.:1.000   1st Qu.:1.00  
+ Median : 430.0   Median :3150   Median : 2823   Median :1.000   Median :1.00  
+ Mean   : 849.1   Mean   :3204   Mean   : 6659   Mean   :1.107   Mean   :1.38  
+ 3rd Qu.:1010.0   3rd Qu.:5330   3rd Qu.: 8160   3rd Qu.:1.000   3rd Qu.:2.00  
+ Max.   :8400.0   Max.   :7650   Max.   :33968   Max.   :6.000   Max.   :2.00  
+                                                                               
+ ownershpd1940    pernum1940       perwt1940   nchild1940       sex1940     
+ Min.   : 0.0   Min.   : 1.000   Min.   :1   Min.   :0.000   Min.   :1.000  
+ 1st Qu.:10.0   1st Qu.: 1.000   1st Qu.:1   1st Qu.:0.000   1st Qu.:1.000  
+ Median :10.0   Median : 1.000   Median :1   Median :0.000   Median :1.000  
+ Mean   :13.8   Mean   : 1.794   Mean   :1   Mean   :0.966   Mean   :1.404  
+ 3rd Qu.:20.0   3rd Qu.: 2.000   3rd Qu.:1   3rd Qu.:2.000   3rd Qu.:2.000  
+ Max.   :20.0   Max.   :60.000   Max.   :1   Max.   :9.000   Max.   :2.000  
+                                                                            
+    age1940        marst1940        race1940       raced1940    
+ Min.   :30.00   Min.   :1.000   Min.   :1.000   Min.   :100.0  
+ 1st Qu.:39.00   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:100.0  
+ Median :46.00   Median :1.000   Median :1.000   Median :100.0  
+ Mean   :47.61   Mean   :2.708   Mean   :1.033   Mean   :103.3  
+ 3rd Qu.:55.00   3rd Qu.:6.000   3rd Qu.:1.000   3rd Qu.:100.0  
+ Max.   :72.00   Max.   :6.000   Max.   :6.000   Max.   :600.0  
+                                                                
+   hispan1940       hispand1940         bpl1940          bpld1940    
+ Min.   :0.00000   Min.   :  0.000   Min.   :  1.00   Min.   :  100  
+ 1st Qu.:0.00000   1st Qu.:  0.000   1st Qu.: 20.00   1st Qu.: 2000  
+ Median :0.00000   Median :  0.000   Median : 29.00   Median : 2900  
+ Mean   :0.01119   Mean   :  1.259   Mean   : 61.68   Mean   : 6168  
+ 3rd Qu.:0.00000   3rd Qu.:  0.000   3rd Qu.: 42.00   3rd Qu.: 4200  
+ Max.   :4.00000   Max.   :498.000   Max.   :900.00   Max.   :90020  
+                                                                     
+  nativity1940     citizen1940       school1940     higrade1940   
+ Min.   :0.0000   Min.   :0.0000   Min.   :1.000   Min.   : 1.00  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:11.00  
+ Median :0.0000   Median :0.0000   Median :1.000   Median :15.00  
+ Mean   :0.1014   Mean   :0.2047   Mean   :1.018   Mean   :16.15  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:1.000   3rd Qu.:19.00  
+ Max.   :5.0000   Max.   :5.0000   Max.   :2.000   Max.   :99.00  
+                                                                  
+  higraded1940      educ1940        educd1940       empstat1940   
+ Min.   : 10.0   Min.   : 0.000   Min.   :  2.00   Min.   :1.000  
+ 1st Qu.:110.0   1st Qu.: 2.000   1st Qu.: 26.00   1st Qu.:1.000  
+ Median :150.0   Median : 6.000   Median : 60.00   Median :1.000  
+ Mean   :161.7   Mean   : 7.651   Mean   : 78.46   Mean   :1.368  
+ 3rd Qu.:190.0   3rd Qu.:10.000   3rd Qu.:100.00   3rd Qu.:1.000  
+ Max.   :999.0   Max.   :99.000   Max.   :999.00   Max.   :3.000  
+                                                                  
+  empstatd1940   labforce1940    classwkr1940   classwkrd1940    occ19501940   
+ Min.   :10.0   Min.   :1.000   Min.   :0.000   Min.   : 0.00   Min.   :  1.0  
+ 1st Qu.:10.0   1st Qu.:2.000   1st Qu.:2.000   1st Qu.:22.00   1st Qu.: 93.0  
+ Median :10.0   Median :2.000   Median :2.000   Median :24.00   Median :515.0  
+ Mean   :14.1   Mean   :1.829   Mean   :1.634   Mean   :19.22   Mean   :493.2  
+ 3rd Qu.:10.0   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:24.00   3rd Qu.:773.0  
+ Max.   :34.0   Max.   :2.000   Max.   :9.000   Max.   :98.00   Max.   :999.0  
+                                                                               
+  ind19501940     wkswork11940    wkswork21940    hrswork11940    hrswork21940 
+ Min.   :  0.0   Min.   : 0.00   Min.   :0.000   Min.   : 0.00   Min.   :0.00  
+ 1st Qu.:418.0   1st Qu.:32.00   1st Qu.:3.000   1st Qu.: 0.00   1st Qu.:0.00  
+ Median :888.0   Median :50.00   Median :6.000   Median :40.00   Median :5.00  
+ Mean   :670.1   Mean   :37.27   Mean   :4.053   Mean   :31.91   Mean   :3.83  
+ 3rd Qu.:896.0   3rd Qu.:52.00   3rd Qu.:6.000   3rd Qu.:45.00   3rd Qu.:6.00  
+ Max.   :997.0   Max.   :52.00   Max.   :6.000   Max.   :98.00   Max.   :8.00  
+                                                                               
+  incwage1940     incnonwg1940    occscore1940    migrate51940  migrate5d1940  
+ Min.   :   1    Min.   :1.000   Min.   : 0.00   Min.   :1.00   Min.   :10.00  
+ 1st Qu.:1370    1st Qu.:1.000   1st Qu.:20.00   1st Qu.:1.00   1st Qu.:10.00  
+ Median :1944    Median :1.000   Median :27.00   Median :1.00   Median :10.00  
+ Mean   :1954    Mean   :1.488   Mean   :23.72   Mean   :1.61   Mean   :16.64  
+ 3rd Qu.:2400    3rd Qu.:2.000   3rd Qu.:32.00   3rd Qu.:2.00   3rd Qu.:21.00  
+ Max.   :5001    Max.   :9.000   Max.   :80.00   Max.   :9.00   Max.   :90.00  
+ NA's   :74376                                                                 
+  migplac51940    migmet51940    migtype51940    migcity51940   migsea51940   
+ Min.   :  1.0   Min.   :   0   Min.   :1.000   Min.   :   1   Min.   :  1.0  
+ 1st Qu.: 26.0   1st Qu.:1680   1st Qu.:3.000   1st Qu.:1750   1st Qu.: 96.0  
+ Median :990.0   Median :4520   Median :3.000   Median :4570   Median :205.0  
+ Mean   :527.1   Mean   :4710   Mean   :3.165   Mean   :4834   Mean   :232.1  
+ 3rd Qu.:990.0   3rd Qu.:7040   3rd Qu.:4.000   3rd Qu.:6710   3rd Qu.:329.0  
+ Max.   :999.0   Max.   :9999   Max.   :9.000   Max.   :9999   Max.   :997.0  
+                                                                              
+  sameplac1940  versionhist1940  samesea51940   migcounty1940    keep_bool     
+ Min.   :1.00   Min.   :2       Min.   :1.000   Min.   :  10   Min.   :0.0000  
+ 1st Qu.:2.00   1st Qu.:2       1st Qu.:1.000   1st Qu.:9999   1st Qu.:1.0000  
+ Median :2.00   Median :2       Median :1.000   Median :9999   Median :1.0000  
+ Mean   :1.97   Mean   :2       Mean   :1.199   Mean   :9419   Mean   :0.8952  
+ 3rd Qu.:2.00   3rd Qu.:2       3rd Qu.:1.000   3rd Qu.:9999   3rd Qu.:1.0000  
+ Max.   :9.00   Max.   :2       Max.   :9.000   Max.   :9999   Max.   :1.0000  
+                                                                               
+      id              city_1940      city_1935         year     
+ Length:319663      Min.   :   5   Min.   :   5   Min.   :1930  
+ Class :character   1st Qu.:1452   1st Qu.:1452   1st Qu.:1930  
+ Mode  :character   Median :3730   Median :3730   Median :1930  
+                    Mean   :3643   Mean   :3643   Mean   :1930  
+                    3rd Qu.:5370   3rd Qu.:5370   3rd Qu.:1930  
+                    Max.   :7650   Max.   :7650   Max.   :1930  
+                                                                
+    state              source               RFC                 WPA           
+ Length:319663      Length:319663      Min.   :        0   Min.   :   246479  
+ Class :character   Class :character   1st Qu.:  7173518   1st Qu.: 14559656  
+ Mode  :character   Mode  :character   Median : 24847273   Median : 36012167  
+                                       Mean   : 68246022   Mean   : 68155728  
+                                       3rd Qu.: 93495873   3rd Qu.:110097644  
+                                       Max.   :268095338   Max.   :274365795  
+                                       NA's   :4296        NA's   :4296       
+     RELIEF             RLDF3329           pop_30         pop_20_30       
+ Min.   :   801456   Min.   :-0.6927   Min.   : 8.213   Min.   :-0.37711  
+ 1st Qu.: 24128048   1st Qu.:-0.4847   1st Qu.:11.619   1st Qu.: 0.09241  
+ Median : 58129292   Median :-0.4239   Median :12.586   Median : 0.19707  
+ Mean   :116579805   Mean   :-0.4090   Mean   :12.579   Mean   : 0.25529  
+ 3rd Qu.:184616746   3rd Qu.:-0.3240   3rd Qu.:13.619   3rd Qu.: 0.32704  
+ Max.   :477535798   Max.   :-0.1469   Max.   :15.032   Max.   : 2.13632  
+ NA's   :4296        NA's   :4296                                         
+ delta_loan_31_29  delta_loan_31_29_tr    region          connect_to_nyc  
+ Min.   :-3.1790   Min.   :-0.8804     Length:319663      Min.   :0.0000  
+ 1st Qu.:-0.1709   1st Qu.:-0.1700     Class :character   1st Qu.:0.0000  
+ Median :-0.0957   Median :-0.0957     Mode  :character   Median :1.0000  
+ Mean   :-0.1142   Mean   :-0.0925                        Mean   :0.6656  
+ 3rd Qu.:-0.0314   3rd Qu.:-0.0314                        3rd Qu.:1.0000  
+ Max.   : 0.8603   Max.   : 0.3734                        Max.   :1.0000  
+ NA's   :6190      NA's   :11487                          NA's   :9040    
+ connect_to_chi   connect_to_cle   connect_with_2_banks  hist_mean_ir  
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000       Min.   :4.000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000       1st Qu.:4.332  
+ Median :0.0000   Median :0.0000   Median :1.0000       Median :4.583  
+ Mean   :0.1267   Mean   :0.0372   Mean   :0.5729       Mean   :4.591  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:1.0000       3rd Qu.:4.877  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000       Max.   :5.891  
+ NA's   :9040     NA's   :9040     NA's   :9040         NA's   :11867  
+ hist_mean_ir_w  share_1925_1929_t share_1920_1924_t share_1915_1919_t
+ Min.   :3.881   Min.   :0.0000    Min.   :0.0000    Min.   :0.0000   
+ 1st Qu.:4.302   1st Qu.:0.2277    1st Qu.:0.1927    1st Qu.:0.0450   
+ Median :4.513   Median :0.3595    Median :0.3129    Median :0.1157   
+ Mean   :4.528   Mean   :0.3507    Mean   :0.3200    Mean   :0.1299   
+ 3rd Qu.:4.779   3rd Qu.:0.4709    3rd Qu.:0.4299    3rd Qu.:0.1510   
+ Max.   :5.931   Max.   :0.9722    Max.   :0.9497    Max.   :0.7806   
+ NA's   :11867   NA's   :8675      NA's   :8675      NA's   :8675     
+ share_1900_1915_t years_since_w     check_moody          pop_i       
+ Min.   :0.0000    Min.   : 2.302   Min.   :-1.7679   Min.   :  2488  
+ 1st Qu.:0.0679    1st Qu.: 6.673   1st Qu.:-0.0085   1st Qu.: 41412  
+ Median :0.1836    Median : 8.424   Median : 0.0490   Median :109139  
+ Mean   :0.1994    Mean   : 8.733   Mean   : 0.1112   Mean   :131329  
+ 3rd Qu.:0.2600    3rd Qu.: 9.659   3rd Qu.: 0.2174   3rd Qu.:200563  
+ Max.   :1.0000    Max.   :19.163   Max.   : 0.8284   Max.   :354544  
+ NA's   :8675      NA's   :8675     NA's   :11573     NA's   :138531  
+  default_city       default       mill_rate_total    bond_rate     
+ Min.   :0.0000   Min.   :0.0000   Min.   :10.00    Min.   : 0.200  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:16.30    1st Qu.: 2.100  
+ Median :0.0000   Median :0.0000   Median :21.10    Median : 2.300  
+ Mean   :0.3334   Mean   :0.3427   Mean   :21.49    Mean   : 3.546  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:25.20    3rd Qu.: 4.800  
+ Max.   :1.0000   Max.   :1.0000   Max.   :39.40    Max.   :13.200  
+                                   NA's   :240891   NA's   :275171  
+   pc_rev_tax       real_rev_tax       real_pc_rev_tax  real_pc_rev_tax_log
+ Min.   :  6.081   Min.   :   126457   Min.   : 12.11   Min.   :2.494      
+ 1st Qu.: 19.679   1st Qu.:  5559986   1st Qu.: 39.20   1st Qu.:3.669      
+ Median : 30.361   Median : 17933974   Median : 60.48   Median :4.102      
+ Mean   : 32.682   Mean   : 41755720   Mean   : 65.10   Mean   :4.054      
+ 3rd Qu.: 43.443   3rd Qu.: 66359984   3rd Qu.: 86.54   3rd Qu.:4.461      
+ Max.   :120.777   Max.   :143834960   Max.   :240.59   Max.   :5.483      
+                                                                           
+ pc_rev_nontax     real_rev_nontax    real_pc_rev_nontax real_pc_rev_nontax_log
+ Min.   : 0.1811   Min.   :    4310   Min.   : 0.3608    Min.   :-1.020        
+ 1st Qu.:10.2768   1st Qu.: 2098506   1st Qu.:20.4716    1st Qu.: 3.019        
+ Median :13.7871   Median : 8839151   Median :27.4642    Median : 3.313        
+ Mean   :15.9681   Mean   :24089149   Mean   :31.8090    Mean   : 3.287        
+ 3rd Qu.:20.5088   3rd Qu.:32098100   3rd Qu.:40.8542    3rd Qu.: 3.710        
+ Max.   :49.8707   Max.   :91862928   Max.   :99.3440    Max.   : 4.599        
+                                                                               
+   pc_rev_ig         real_rev_ig       real_pc_rev_ig   real_pc_rev_ig_log
+ Min.   : 0.00000   Min.   :       0   Min.   : 0.000   Min.   :-6.1074   
+ 1st Qu.: 0.08986   1st Qu.:   12849   1st Qu.: 0.179   1st Qu.:-1.3151   
+ Median : 0.60295   Median :  418799   Median : 1.201   Median : 0.1832   
+ Mean   : 1.69594   Mean   : 2035491   Mean   : 3.378   Mean   :-0.0515   
+ 3rd Qu.: 2.39936   3rd Qu.: 2957482   3rd Qu.: 4.780   3rd Qu.: 1.6334   
+ Max.   :19.76809   Max.   :19172248   Max.   :39.379   Max.   : 3.6732   
+                                                        NA's   :23299     
+  pc_rev_debt      real_rev_debt       real_pc_rev_debt real_pc_rev_debt_log
+ Min.   :  0.000   Min.   :        0   Min.   :  0.00   Min.   :-4.832      
+ 1st Qu.:  5.568   1st Qu.:   639653   1st Qu.: 11.09   1st Qu.: 2.406      
+ Median : 12.805   Median :  4730492   Median : 25.51   Median : 3.356      
+ Mean   : 24.288   Mean   : 14112865   Mean   : 48.38   Mean   : 3.272      
+ 3rd Qu.: 44.664   3rd Qu.: 13731804   3rd Qu.: 88.97   3rd Qu.: 4.495      
+ Max.   :191.744   Max.   :112972192   Max.   :381.96   Max.   : 5.945      
+ NA's   :177387    NA's   :177387      NA's   :177387   NA's   :186115      
+ pc_rev_nontax_nondebt real_rev_nontax_nondebt real_pc_rev_nontax_nondebt
+ Min.   : 0.0000       Min.   :        0       Min.   :  0.000           
+ 1st Qu.: 0.7656       1st Qu.:   267526       1st Qu.:  1.525           
+ Median : 4.6062       Median :  1766189       Median :  9.176           
+ Mean   : 8.8738       Mean   : 13981137       Mean   : 17.677           
+ 3rd Qu.:11.4473       3rd Qu.:  8994111       3rd Qu.: 22.803           
+ Max.   :76.0778       Max.   :136459456       Max.   :151.549           
+                                                                         
+ real_pc_rev_nontax_nondebt_log pc_maint_dep_gen real_maint_dep_gen
+ Min.   :-6.936                 Min.   :0.3976   Min.   :   15854  
+ 1st Qu.: 1.356                 1st Qu.:1.8543   1st Qu.:  405243  
+ Median : 2.525                 Median :2.7271   Median : 1234645  
+ Mean   : 2.307                 Mean   :3.1061   Mean   : 6168390  
+ 3rd Qu.: 3.127                 3rd Qu.:4.2449   3rd Qu.: 5400040  
+ Max.   : 5.021                 Max.   :8.1775   Max.   :35853148  
+ NA's   :57846                                                     
+ real_pc_maint_dep_gen real_pc_maint_dep_gen_log pc_maint_dep_health
+ Min.   : 0.7919       Min.   :-0.2333           Min.   : 0.1219    
+ 1st Qu.: 3.6937       1st Qu.: 1.3066           1st Qu.: 2.3863    
+ Median : 5.4324       Median : 1.6924           Median : 3.5288    
+ Mean   : 6.1874       Mean   : 1.6679           Mean   : 3.6947    
+ 3rd Qu.: 8.4559       3rd Qu.: 2.1349           3rd Qu.: 4.7079    
+ Max.   :16.2898       Max.   : 2.7905           Max.   :11.2240    
+                                                                    
+ real_maint_dep_health real_pc_maint_dep_health real_pc_maint_dep_health_log
+ Min.   :    2902      Min.   : 0.2429          Min.   :-1.415              
+ 1st Qu.:  611459      1st Qu.: 4.7536          1st Qu.: 1.559              
+ Median : 1823711      Median : 7.0295          Median : 1.950              
+ Mean   : 6258092      Mean   : 7.3599          Mean   : 1.864              
+ 3rd Qu.: 7606182      3rd Qu.: 9.3782          3rd Qu.: 2.238              
+ Max.   :29234234      Max.   :22.3586          Max.   : 3.107              
+                                                                            
+ pc_maint_dep_road real_maint_dep_road real_pc_maint_dep_road
+ Min.   : 0.000    Min.   :       0    Min.   : 0.000        
+ 1st Qu.: 2.818    1st Qu.:  610347    1st Qu.: 5.614        
+ Median : 3.801    Median : 2117968    Median : 7.572        
+ Mean   : 3.894    Mean   : 5995925    Mean   : 7.757        
+ 3rd Qu.: 4.705    3rd Qu.: 7925593    3rd Qu.: 9.373        
+ Max.   :13.846    Max.   :24935574    Max.   :27.582        
+                                                             
+ real_pc_maint_dep_road_log pc_maint_dep_pp  real_maint_dep_pp 
+ Min.   :0.7773             Min.   : 1.325   Min.   :   42567  
+ 1st Qu.:1.7583             1st Qu.: 6.284   1st Qu.: 1424221  
+ Median :2.0651             Median : 8.656   Median : 4775036  
+ Mean   :2.0259             Mean   : 8.293   Mean   :13325903  
+ 3rd Qu.:2.2378             3rd Qu.: 9.909   3rd Qu.:16015827  
+ Max.   :3.3172             Max.   :16.563   Max.   :58674556  
+ NA's   :13354                                                 
+ real_pc_maint_dep_pp real_pc_maint_dep_pp_log pc_maint_dep_charity
+ Min.   : 2.639       Min.   :0.9705           Min.   : 0.000      
+ 1st Qu.:12.518       1st Qu.:2.5271           1st Qu.: 0.579      
+ Median :17.243       Median :2.8474           Median : 2.144      
+ Mean   :16.520       Mean   :2.7481           Mean   : 2.728      
+ 3rd Qu.:19.739       3rd Qu.:2.9826           3rd Qu.: 4.269      
+ Max.   :32.993       Max.   :3.4963           Max.   :10.672      
+                                                                   
+ real_maint_dep_charity real_pc_maint_dep_charity real_pc_maint_dep_charity_log
+ Min.   :       0       Min.   : 0.000            Min.   :-6.805               
+ 1st Qu.:  131044       1st Qu.: 1.153            1st Qu.: 0.550               
+ Median :  799757       Median : 4.270            Median : 1.496               
+ Mean   : 4591561       Mean   : 5.434            Mean   : 1.127               
+ 3rd Qu.: 6273395       3rd Qu.: 8.503            3rd Qu.: 2.146               
+ Max.   :21864706       Max.   :21.260            Max.   : 3.057               
+                                                  NA's   :20249                
+ pc_maint_dep_rec real_maint_dep_rec real_pc_maint_dep_rec
+ Min.   :0.0000   Min.   :       0   Min.   : 0.000       
+ 1st Qu.:0.9076   1st Qu.:  244055   1st Qu.: 1.808       
+ Median :1.5447   Median :  809030   Median : 3.077       
+ Mean   :1.6840   Mean   : 3061002   Mean   : 3.355       
+ 3rd Qu.:2.1399   3rd Qu.: 3411408   3rd Qu.: 4.263       
+ Max.   :6.7338   Max.   :17209130   Max.   :13.414       
+                                                          
+ real_pc_maint_dep_rec_log pc_maint_dep_school real_maint_dep_school
+ Min.   :-5.697            Min.   : 0.000      Min.   :       0     
+ 1st Qu.: 0.603            1st Qu.: 2.121      1st Qu.:  922607     
+ Median : 1.124            Median :13.668      Median : 5369392     
+ Mean   : 1.000            Mean   :11.812      Mean   :18100641     
+ 3rd Qu.: 1.450            3rd Qu.:17.020      3rd Qu.:21533044     
+ Max.   : 2.596            Max.   :35.987      Max.   :91931752     
+ NA's   :540                                                        
+ real_pc_maint_dep_school real_pc_maint_dep_school_log pc_maint_dep_other
+ Min.   : 0.000           Min.   :-4.036               Min.   :0.0000    
+ 1st Qu.: 4.226           1st Qu.: 3.091               1st Qu.:0.8469    
+ Median :27.227           Median : 3.342               Median :1.6624    
+ Mean   :23.530           Mean   : 2.908               Mean   :2.0262    
+ 3rd Qu.:33.904           3rd Qu.: 3.534               3rd Qu.:2.8492    
+ Max.   :71.688           Max.   : 4.272               Max.   :8.3076    
+                          NA's   :32092                                  
+ real_maint_dep_other real_pc_maint_dep_other real_pc_maint_dep_other_log
+ Min.   :       0     Min.   : 0.000          Min.   :-7.7145            
+ 1st Qu.:  186191     1st Qu.: 1.687          1st Qu.: 0.5233            
+ Median :  832028     Median : 3.311          Median : 1.1974            
+ Mean   : 3871182     Mean   : 4.036          Mean   : 1.0238            
+ 3rd Qu.: 7762699     3rd Qu.: 5.676          3rd Qu.: 1.7362            
+ Max.   :19163748     Max.   :16.549          Max.   : 2.8063            
+                                              NA's   :1801               
+     pc_pse          real_pse         real_pc_pse      real_pc_pse_log 
+ Min.   : 0.000   Min.   :       0   Min.   :  0.000   Min.   :-6.947  
+ 1st Qu.: 2.217   1st Qu.:  592592   1st Qu.:  4.416   1st Qu.: 1.493  
+ Median : 3.054   Median : 2199798   Median :  6.083   Median : 1.806  
+ Mean   : 6.570   Mean   : 8937784   Mean   : 13.088   Mean   : 1.913  
+ 3rd Qu.: 6.041   3rd Qu.: 7010060   3rd Qu.: 12.033   3rd Qu.: 2.488  
+ Max.   :78.141   Max.   :98749480   Max.   :155.660   Max.   : 5.048  
+ NA's   :163      NA's   :163        NA's   :163       NA's   :3621    
+   pc_outlay        real_outlay        real_pc_outlay   real_pc_outlay_log
+ Min.   :  0.000   Min.   :        0   Min.   :  0.00   Min.   :-1.178    
+ 1st Qu.:  8.444   1st Qu.:  2231415   1st Qu.: 16.82   1st Qu.: 2.823    
+ Median : 17.567   Median :  8162259   Median : 34.99   Median : 3.556    
+ Mean   : 19.437   Mean   : 39141155   Mean   : 38.72   Mean   : 3.296    
+ 3rd Qu.: 26.843   3rd Qu.: 33201474   3rd Qu.: 53.47   3rd Qu.: 3.979    
+ Max.   :142.629   Max.   :234599744   Max.   :284.12   Max.   : 5.649    
+                                                        NA's   :758       
+  pc_interest     real_interest      real_pc_interest real_pc_interest_log
+ Min.   : 0.000   Min.   :       0   Min.   : 0.000   Min.   :-8.399      
+ 1st Qu.: 3.742   1st Qu.:  786998   1st Qu.: 7.454   1st Qu.: 2.009      
+ Median : 6.211   Median : 3795920   Median :12.373   Median : 2.516      
+ Mean   : 6.018   Mean   :10533312   Mean   :11.987   Mean   : 2.195      
+ 3rd Qu.: 8.328   3rd Qu.:14921012   3rd Qu.:16.591   3rd Qu.: 2.809      
+ Max.   :21.311   Max.   :42787224   Max.   :42.452   Max.   : 3.748      
+                                                      NA's   :395         
+ pc_repay_debt     real_repay_debt    real_pc_repay_debt real_pc_repay_debt_log
+ Min.   :  0.214   Min.   :    4880   Min.   :  0.426    Min.   :-0.852        
+ 1st Qu.:  4.494   1st Qu.:  640920   1st Qu.:  8.952    1st Qu.: 2.192        
+ Median : 11.933   Median : 4297410   Median : 23.772    Median : 3.168        
+ Mean   : 18.741   Mean   : 9225490   Mean   : 37.332    Mean   : 2.993        
+ 3rd Qu.: 35.216   3rd Qu.:11082537   3rd Qu.: 70.151    3rd Qu.: 4.251        
+ Max.   :186.480   Max.   :59901748   Max.   :371.475    Max.   : 5.917        
+ NA's   :177387    NA's   :177387     NA's   :177387     NA's   :177387        
+  pc_pay_other    real_pay_other      real_pc_pay_other real_pc_pay_other_log
+ Min.   : 0.000   Min.   :        0   Min.   :  0.000   Min.   :-5.302       
+ 1st Qu.: 2.897   1st Qu.:   209532   1st Qu.:  5.771   1st Qu.: 2.089       
+ Median : 8.597   Median :  1026800   Median : 17.125   Median : 2.841       
+ Mean   :14.152   Mean   : 15066424   Mean   : 28.191   Mean   : 2.673       
+ 3rd Qu.:19.470   3rd Qu.: 30061914   3rd Qu.: 38.785   3rd Qu.: 3.673       
+ Max.   :96.215   Max.   :126220840   Max.   :191.664   Max.   : 5.256       
+ NA's   :177387   NA's   :177387      NA's   :177387    NA's   :184218       
+  pc_debt_bond   real_debt_bond      real_pc_debt_bond real_pc_debt_bond_log
+ Min.   :  0.0   Min.   :0.000e+00   Min.   :  0.0     Min.   :-0.8651      
+ 1st Qu.: 79.6   1st Qu.:1.479e+07   1st Qu.:158.6     1st Qu.: 5.0662      
+ Median :103.9   Median :6.912e+07   Median :207.0     Median : 5.3326      
+ Mean   :123.7   Mean   :2.084e+08   Mean   :246.3     Mean   : 5.2596      
+ 3rd Qu.:176.1   3rd Qu.:2.921e+08   3rd Qu.:350.8     3rd Qu.: 5.8602      
+ Max.   :427.6   Max.   :1.076e+09   Max.   :851.8     Max.   : 6.7474      
+                                                       NA's   :285          
+ pc_debt_total    real_debt_total     real_pc_debt_total real_pc_debt_total_log
+ Min.   :  0.00   Min.   :0.000e+00   Min.   :  0.0      Min.   :-0.8651       
+ 1st Qu.: 87.53   1st Qu.:1.895e+07   1st Qu.:174.4      1st Qu.: 5.1612       
+ Median :129.18   Median :8.652e+07   Median :257.3      Median : 5.5504       
+ Mean   :150.17   Mean   :2.942e+08   Mean   :299.2      Mean   : 5.4555       
+ 3rd Qu.:214.08   3rd Qu.:2.921e+08   3rd Qu.:426.5      3rd Qu.: 6.0555       
+ Max.   :427.62   Max.   :1.440e+09   Max.   :851.8      Max.   : 6.7474       
+                                                         NA's   :285           
+  pc_debt_temp    real_debt_temp      real_pc_debt_temp real_pc_debt_temp_log
+ Min.   : 0.000   Min.   :        0   Min.   :  0.000   Min.   :-3.039       
+ 1st Qu.: 0.950   1st Qu.:   369149   1st Qu.:  1.892   1st Qu.: 1.946       
+ Median : 5.075   Median :  2191235   Median : 10.109   Median : 2.731       
+ Mean   :18.492   Mean   : 73882417   Mean   : 36.836   Mean   : 2.622       
+ 3rd Qu.:21.224   3rd Qu.: 17111538   3rd Qu.: 42.278   3rd Qu.: 4.176       
+ Max.   :87.824   Max.   :590698496   Max.   :174.947   Max.   : 5.164       
+ NA's   :79057    NA's   :79057       NA's   :79057     NA's   :109176       
+ pc_assess_total  real_assess_total   real_pc_assess_total
+ Min.   : 384.6   Min.   :1.023e+07   Min.   : 766        
+ 1st Qu.:1150.5   1st Qu.:3.021e+08   1st Qu.:2292        
+ Median :1677.5   Median :9.149e+08   Median :3362        
+ Mean   :1664.6   Mean   :2.419e+09   Mean   :3345        
+ 3rd Qu.:2119.8   3rd Qu.:4.009e+09   3rd Qu.:4314        
+ Max.   :3272.2   Max.   :9.645e+09   Max.   :9553        
+ NA's   :6082     NA's   :4011        NA's   :4011        
+ real_pc_assess_total_log pc_maint_dep_total real_maint_dep_total
+ Min.   :6.641            Min.   : 6.017     Min.   :   136824   
+ 1st Qu.:7.737            1st Qu.:25.991     1st Qu.:  6761828   
+ Median :8.120            Median :40.319     Median : 21801076   
+ Mean   :8.053            Mean   :37.239     Mean   : 61372698   
+ 3rd Qu.:8.370            3rd Qu.:46.028     3rd Qu.: 66016980   
+ Max.   :9.165            Max.   :72.426     Max.   :291419712   
+ NA's   :4011                                                    
+ real_pc_maint_dep_total real_pc_maint_dep_total_log  pc_rev_total   
+ Min.   : 11.99          Min.   :2.484               Min.   : 10.15  
+ 1st Qu.: 51.77          1st Qu.:3.947               1st Qu.: 38.75  
+ Median : 80.32          Median :4.386               Median : 52.22  
+ Mean   : 74.18          Mean   :4.203               Mean   : 57.52  
+ 3rd Qu.: 91.69          3rd Qu.:4.518               3rd Qu.: 70.95  
+ Max.   :144.28          Max.   :4.972               Max.   :142.87  
+                                                                     
+ real_rev_total      real_pc_rev_total real_pc_rev_total_log pc_maint_outlay  
+ Min.   :   249608   Min.   : 20.22    Min.   :3.007         Min.   :  7.569  
+ 1st Qu.: 10271779   1st Qu.: 77.20    1st Qu.:4.346         1st Qu.: 34.228  
+ Median : 31221646   Median :104.03    Median :4.645         Median : 57.413  
+ Mean   : 79826005   Mean   :114.59    Mean   :4.646         Mean   : 56.675  
+ 3rd Qu.:154395696   3rd Qu.:141.33    3rd Qu.:4.951         3rd Qu.: 78.207  
+ Max.   :260656832   Max.   :284.60    Max.   :5.651         Max.   :163.062  
+                                                                              
+ real_maint_outlay   real_pc_maint_outlay real_pc_maint_outlay_log
+ Min.   :   174508   Min.   : 15.08       Min.   :2.713           
+ 1st Qu.: 10122950   1st Qu.: 68.18       1st Qu.:4.222           
+ Median : 33533746   Median :114.37       Median :4.739           
+ Mean   :100513851   Mean   :112.90       Mean   :4.600           
+ 3rd Qu.: 94696336   3rd Qu.:155.79       3rd Qu.:5.049           
+ Max.   :526019456   Max.   :324.82       Max.   :5.783           
+                                                                  
+    pop_i_k         bonds_to_assess    int_to_rev      debt_to_rev   
+ Min.   :   2.488   Min.   :0.0000   Min.   :0.0000   Min.   :0.000  
+ 1st Qu.:  99.748   1st Qu.:0.0480   1st Qu.:0.1150   1st Qu.:1.503  
+ Median : 264.033   Median :0.0702   Median :0.1945   Median :2.485  
+ Mean   : 630.705   Mean   :0.0775   Mean   :0.2102   Mean   :2.912  
+ 3rd Qu.: 792.522   3rd Qu.:0.1017   3rd Qu.:0.2901   3rd Qu.:3.944  
+ Max.   :2971.598   Max.   :0.2852   Max.   :0.7599   Max.   :7.273  
+                    NA's   :4011                                     
+     WPA_pc            RFC_pc         RELIEF_pc      bonds_to_assess29_lev
+ Min.   :  6.194   Min.   :  0.00   Min.   : 20.14   Min.   :0.0000       
+ 1st Qu.: 45.932   1st Qu.: 22.81   1st Qu.: 86.89   1st Qu.:0.0449       
+ Median : 63.856   Median : 39.47   Median :101.08   Median :0.0682       
+ Mean   : 63.498   Mean   : 60.24   Mean   :104.92   Mean   :0.0682       
+ 3rd Qu.: 73.389   3rd Qu.: 64.29   3rd Qu.:119.92   3rd Qu.:0.0911       
+ Max.   :170.602   Max.   :899.66   Max.   :209.20   Max.   :0.1448       
+ NA's   :4296      NA's   :4296     NA's   :4296     NA's   :20989        
+ int_to_rev29_lev debt_to_rev29_lev temp_to_bonds29_lev debt_total29_lev
+ Min.   :0.000    Min.   :0.000     Min.   :0.000       Min.   :0.0000  
+ 1st Qu.:0.103    1st Qu.:1.348     1st Qu.:0.010       1st Qu.:0.7606  
+ Median :0.169    Median :1.858     Median :0.047       Median :1.2414  
+ Mean   :0.182    Mean   :2.190     Mean   :0.100       Mean   :1.2663  
+ 3rd Qu.:0.250    3rd Qu.:2.959     3rd Qu.:0.135       3rd Qu.:1.7654  
+ Max.   :0.395    Max.   :5.119     Max.   :0.518       Max.   :2.2815  
+ NA's   :33723    NA's   :57955     NA's   :79057       NA's   :27971   
+ bonds_to_assess24_lev int_to_rev24_lev debt_to_rev24_lev temp_to_bonds24_lev
+ Min.   :0.004         Min.   :0.000    Min.   :0.000     Min.   :0.000      
+ 1st Qu.:0.043         1st Qu.:0.094    1st Qu.:1.562     1st Qu.:0.015      
+ Median :0.068         Median :0.156    Median :2.273     Median :0.054      
+ Mean   :0.063         Mean   :0.157    Mean   :2.264     Mean   :0.089      
+ 3rd Qu.:0.080         3rd Qu.:0.187    3rd Qu.:2.784     3rd Qu.:0.135      
+ Max.   :0.126         Max.   :0.373    Max.   :4.500     Max.   :0.469      
+ NA's   :71038         NA's   :45807    NA's   :54632     NA's   :79057      
+ debt_total24_lev    gd_shock        bta_moody        itr_moody    
+ Min.   :0.000    Min.   :0.0145   Min.   :0.0000   Min.   :0.002  
+ 1st Qu.:0.709    1st Qu.:0.1974   1st Qu.:0.0118   1st Qu.:0.031  
+ Median :0.924    Median :0.2826   Median :0.0173   Median :0.040  
+ Mean   :0.976    Mean   :0.3053   Mean   :0.0191   Mean   :0.050  
+ 3rd Qu.:1.401    3rd Qu.:0.4223   3rd Qu.:0.0244   3rd Qu.:0.063  
+ Max.   :1.691    Max.   :0.7924   Max.   :0.0578   Max.   :0.192  
+ NA's   :57660    NA's   :8675     NA's   :16117    NA's   :37110  
+   dtr_moody        dt_moody        gd_shock_q      bank_shock    
+ Min.   :0.000   Min.   :0.0000   Min.   :1.000   Min.   :0.0000  
+ 1st Qu.:0.412   1st Qu.:0.2450   1st Qu.:1.000   1st Qu.:0.0462  
+ Median :0.538   Median :0.3349   Median :1.000   Median :0.1095  
+ Mean   :0.649   Mean   :0.3821   Mean   :1.317   Mean   :0.1915  
+ 3rd Qu.:0.763   3rd Qu.:0.4626   3rd Qu.:2.000   3rd Qu.:0.2930  
+ Max.   :1.935   Max.   :0.9682   Max.   :2.000   Max.   :2.0124  
+ NA's   :35548   NA's   :16100    NA's   :8675    NA's   :7173    
+ bank_shock_any   bank_shock_median    connect         rating_int    
+ Min.   :0.0000   Min.   :0.0000    Min.   :0.0000   Min.   : 1.000  
+ 1st Qu.:1.0000   1st Qu.:0.0000    1st Qu.:0.0000   1st Qu.:10.000  
+ Median :1.0000   Median :0.0000    Median :1.0000   Median :10.000  
+ Mean   :0.9346   Mean   :0.3905    Mean   :0.6774   Mean   : 9.964  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000    3rd Qu.:1.0000   3rd Qu.:10.000  
+ Max.   :1.0000   Max.   :1.0000    Max.   :1.0000   Max.   :10.000  
+                  NA's   :7173      NA's   :9040     NA's   :9040    
+  rating_int2        source_      delta_loan_31_29_q     state_     
+ Min.   : 8.000   Min.   :1.000   Min.   :1.000      Min.   : 1.00  
+ 1st Qu.:10.000   1st Qu.:2.000   1st Qu.:1.000      1st Qu.:13.00  
+ Median :10.000   Median :2.000   Median :2.000      Median :19.00  
+ Mean   : 9.975   Mean   :2.901   Mean   :1.521      Mean   :22.27  
+ 3rd Qu.:10.000   3rd Qu.:4.000   3rd Qu.:2.000      3rd Qu.:34.00  
+ Max.   :10.000   Max.   :8.000   Max.   :2.000      Max.   :47.00  
+ NA's   :85896                    NA's   :11487                     
+    region_       post_detail    city_age       outlay_24_29    
+ Min.   :1.000   Min.   :3    Min.   : 12.0    Min.   :  1.839  
+ 1st Qu.:1.000   1st Qu.:3    1st Qu.: 58.0    1st Qu.: 54.318  
+ Median :2.000   Median :3    Median : 80.0    Median :111.190  
+ Mean   :2.124   Mean   :3    Mean   :106.2    Mean   :114.389  
+ 3rd Qu.:3.000   3rd Qu.:3    3rd Qu.:121.0    3rd Qu.:176.225  
+ Max.   :4.000   Max.   :3    Max.   :310.0    Max.   :579.251  
+                              NA's   :238789   NA's   :34280    
+ outlay_24_29_q  pc_total_num_nonhouse_21_29 pc_total_usd_nonhouse_21_29
+ Min.   :1.00    Min.   :0.004               Min.   :  11.64            
+ 1st Qu.:3.00    1st Qu.:0.032               1st Qu.: 174.32            
+ Median :4.00    Median :0.045               Median : 236.43            
+ Mean   :3.47    Mean   :0.060               Mean   : 239.71            
+ 3rd Qu.:4.00    3rd Qu.:0.086               3rd Qu.: 291.88            
+ Max.   :4.00    Max.   :0.519               Max.   :2772.45            
+ NA's   :34280   NA's   :47900               NA's   :47900              
+ pc_total_num_pub_21_29 pc_total_usd_pub_21_29 pc_total_num_house_21_29
+ Min.   :0.000          Min.   :  3.347        Min.   :0.009           
+ 1st Qu.:0.001          1st Qu.: 53.569        1st Qu.:0.031           
+ Median :0.001          Median : 67.616        Median :0.044           
+ Mean   :0.002          Mean   : 70.976        Mean   :0.096           
+ 3rd Qu.:0.002          3rd Qu.: 80.615        3rd Qu.:0.076           
+ Max.   :0.017          Max.   :916.457        Max.   :6.197           
+ NA's   :47900          NA's   :47900          NA's   :47900           
+ pc_total_usd_house_21_29 pc_total_n_fam_21_29    pop_cat           id_      
+ Min.   :  55.46          Min.   :0.010        Min.   :1.000   Min.   :   2  
+ 1st Qu.: 235.35          1st Qu.:0.049        1st Qu.:3.000   1st Qu.: 132  
+ Median : 309.54          Median :0.072        Median :3.000   Median : 308  
+ Mean   : 365.03          Mean   :0.125        Mean   :2.795   Mean   : 351  
+ 3rd Qu.: 538.15          3rd Qu.:0.106        3rd Qu.:3.000   3rd Qu.: 460  
+ Max.   :2320.98          Max.   :5.646        Max.   :3.000   Max.   :2195  
+ NA's   :47900            NA's   :47900                                      
+ pc_outlay_24_29  pc_repay_debt_24_29 outlay_24_29_std pc_outlay_24_29_std
+ Min.   : NA      Min.   : NA         Min.   :-0.701   Min.   : NA        
+ 1st Qu.: NA      1st Qu.: NA         1st Qu.:-0.069   1st Qu.: NA        
+ Median : NA      Median : NA         Median : 0.615   Median : NA        
+ Mean   :NaN      Mean   :NaN         Mean   : 0.654   Mean   :NaN        
+ 3rd Qu.: NA      3rd Qu.: NA         3rd Qu.: 1.398   3rd Qu.: NA        
+ Max.   : NA      Max.   : NA         Max.   : 6.250   Max.   : NA        
+ NA's   :319663   NA's   :319663      NA's   :34280    NA's   :319663     
+ pc_repay_debt_24_29_std    counter      bonds_to_assess29_lev_std
+ Min.   : NA             Min.   :11.00   Min.   :-1.2263          
+ 1st Qu.: NA             1st Qu.:15.00   1st Qu.: 0.2045          
+ Median : NA             Median :15.00   Median : 0.9466          
+ Mean   :NaN             Mean   :15.58   Mean   : 0.9471          
+ 3rd Qu.: NA             3rd Qu.:18.00   3rd Qu.: 1.6777          
+ Max.   : NA             Max.   :18.00   Max.   : 3.3871          
+ NA's   :319663                          NA's   :20989            
+ int_to_rev29_lev_std debt_to_rev29_lev_std temp_to_bonds29_lev_std
+ Min.   :-1.262       Min.   :-1.326        Min.   :-0.758         
+ 1st Qu.:-0.052       1st Qu.:-0.011        1st Qu.:-0.671         
+ Median : 0.732       Median : 0.487        Median :-0.347         
+ Mean   : 0.879       Mean   : 0.811        Mean   : 0.113         
+ 3rd Qu.: 1.688       3rd Qu.: 1.562        3rd Qu.: 0.410         
+ Max.   : 3.396       Max.   : 3.669        Max.   : 3.740         
+ NA's   :33723        NA's   :57955         NA's   :79057          
+ debt_total29_lev_std bonds_to_assess24_lev_std int_to_rev24_lev_std
+ Min.   :-1.1272      Min.   :-1.399            Min.   :-1.226      
+ 1st Qu.: 0.5435      1st Qu.: 0.027            1st Qu.:-0.061      
+ Median : 1.5997      Median : 0.955            Median : 0.710      
+ Mean   : 1.6545      Mean   : 0.785            Mean   : 0.717      
+ 3rd Qu.: 2.7508      3rd Qu.: 1.401            3rd Qu.: 1.095      
+ Max.   : 3.8844      Max.   : 3.060            Max.   : 3.389      
+ NA's   :27971        NA's   :71038             NA's   :45807       
+ debt_to_rev24_lev_std temp_to_bonds24_lev_std debt_total24_lev_std
+ Min.   :-1.403        Min.   :-0.695          Min.   :-1.194      
+ 1st Qu.: 0.201        1st Qu.:-0.590          1st Qu.: 0.799      
+ Median : 0.932        Median :-0.318          Median : 1.404      
+ Mean   : 0.923        Mean   :-0.076          Mean   : 1.551      
+ 3rd Qu.: 1.458        3rd Qu.: 0.250          3rd Qu.: 2.746      
+ Max.   : 3.220        Max.   : 2.581          Max.   : 3.561      
+ NA's   :54632         NA's   :79057           NA's   :57660       
+ bonds_to_assess29_lev_moody_std int_to_rev29_lev_moody_std
+ Min.   :-1.5689                 Min.   :-1.325            
+ 1st Qu.:-0.5155                 1st Qu.:-0.515            
+ Median :-0.0208                 Median :-0.276            
+ Mean   : 0.1336                 Mean   : 0.029            
+ 3rd Qu.: 0.6083                 3rd Qu.: 0.379            
+ Max.   : 3.5919                 Max.   : 4.001            
+ NA's   :16117                   NA's   :37110             
+ debt_to_rev29_lev_moody_std debt_total29_lev_moody_std   pop_i_std     
+ Min.   :-1.667              Min.   :-1.6410            Min.   :-0.456  
+ 1st Qu.:-0.532              1st Qu.:-0.2190            1st Qu.: 0.380  
+ Median :-0.184              Median : 0.3026            Median : 1.833  
+ Mean   : 0.123              Mean   : 0.5768            Mean   : 2.310  
+ 3rd Qu.: 0.437              3rd Qu.: 1.0439            3rd Qu.: 3.796  
+ Max.   : 3.667              Max.   : 3.9786            Max.   : 7.101  
+ NA's   :35548               NA's   :16100              NA's   :138531  
+ pc_assess_total_std  RLDF3329_std       pop_30_std      check_moody_std  
+ Min.   :-1.434      Min.   :-2.1961   Min.   :-0.9118   Min.   :-5.1172  
+ 1st Qu.: 0.068      1st Qu.:-0.6239   1st Qu.: 1.5841   1st Qu.:-0.0632  
+ Median : 1.102      Median :-0.1644   Median : 2.2928   Median : 0.1020  
+ Mean   : 1.076      Mean   :-0.0513   Mean   : 2.2880   Mean   : 0.2805  
+ 3rd Qu.: 1.969      3rd Qu.: 0.5906   3rd Qu.: 3.0504   3rd Qu.: 0.5857  
+ Max.   : 4.229      Max.   : 1.9299   Max.   : 4.0859   Max.   : 2.3407  
+ NA's   :6082        NA's   :4296                        NA's   :11573    
+ bta_moody_std     itr_moody_std    dtr_moody_std     dt_moody_std    
+ Min.   :-1.5783   Min.   :-1.324   Min.   :-1.686   Min.   :-1.6571  
+ 1st Qu.:-0.5056   1st Qu.:-0.578   1st Qu.:-0.555   1st Qu.:-0.2318  
+ Median :-0.0019   Median :-0.358   Median :-0.208   Median : 0.2911  
+ Mean   : 0.1554   Mean   :-0.077   Mean   : 0.097   Mean   : 0.5660  
+ 3rd Qu.: 0.6387   3rd Qu.: 0.247   3rd Qu.: 0.410   3rd Qu.: 1.0341  
+ Max.   : 3.6768   Max.   : 3.586   Max.   : 3.627   Max.   : 3.9757  
+ NA's   :16117     NA's   :37110    NA's   :35548    NA's   :16100    
+ is_local_admin_30 is_local_admin_40  left_public          age2     
+ Min.   :1         Min.   :0.0000    Min.   :0.0000   Min.   : 484  
+ 1st Qu.:1         1st Qu.:0.0000    1st Qu.:0.0000   1st Qu.: 841  
+ Median :1         Median :1.0000    Median :0.0000   Median :1296  
+ Mean   :1         Mean   :0.5361    Mean   :0.4639   Mean   :1515  
+ 3rd Qu.:1         3rd Qu.:1.0000    3rd Qu.:1.0000   3rd Qu.:2025  
+ Max.   :1         Max.   :1.0000    Max.   :1.0000   Max.   :3600  
+                                                                    
+      age3             age4           enter_public    enter_anything  
+ Min.   : 10648   Min.   :  234256   Min.   : NA      Min.   : NA     
+ 1st Qu.: 24389   1st Qu.:  707281   1st Qu.: NA      1st Qu.: NA     
+ Median : 46656   Median : 1679616   Median : NA      Median : NA     
+ Mean   : 65072   Mean   : 2950513   Mean   :NaN      Mean   :NaN     
+ 3rd Qu.: 91125   3rd Qu.: 4100625   3rd Qu.: NA      3rd Qu.: NA     
+ Max.   :216000   Max.   :12960000   Max.   : NA      Max.   : NA     
+                                     NA's   :319663   NA's   :319663  
+   ind_change      stay_public      in_public_30  in_public_40   
+ Min.   :0.0000   Min.   :0.0000   Min.   :1     Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:1     1st Qu.:0.0000  
+ Median :0.0000   Median :1.0000   Median :1     Median :1.0000  
+ Mean   :0.4795   Mean   :0.5361   Mean   :1     Mean   :0.5361  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1     3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1     Max.   :1.0000  
+                                                                 
+      move            stayer        job_changer       blow_it_up    
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :0.0000   Median :0.0000  
+ Mean   :0.2131   Mean   :0.4594   Mean   :0.3275   Mean   :0.1364  
+ 3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+  opportunity        stayer_all     job_changer_all  blow_it_up_all  
+ Min.   :0.00000   Min.   : NA      Min.   : NA      Min.   : NA     
+ 1st Qu.:0.00000   1st Qu.: NA      1st Qu.: NA      1st Qu.: NA     
+ Median :0.00000   Median : NA      Median : NA      Median : NA     
+ Mean   :0.07671   Mean   :NaN      Mean   :NaN      Mean   :NaN     
+ 3rd Qu.:0.00000   3rd Qu.: NA      3rd Qu.: NA      3rd Qu.: NA     
+ Max.   :1.00000   Max.   : NA      Max.   : NA      Max.   : NA     
+                   NA's   :319663   NA's   :319663   NA's   :319663  
+ opportunity_all  stay_public_nomove     status       status_all    
+ Min.   : NA      Min.   :0.0000     Min.   :1.00   Min.   : NA     
+ 1st Qu.: NA      1st Qu.:0.0000     1st Qu.:1.00   1st Qu.: NA     
+ Median : NA      Median :0.0000     Median :2.00   Median : NA     
+ Mean   :NaN      Mean   :0.4594     Mean   :1.83   Mean   :NaN     
+ 3rd Qu.: NA      3rd Qu.:1.0000     3rd Qu.:2.00   3rd Qu.: NA     
+ Max.   : NA      Max.   :1.0000     Max.   :4.00   Max.   : NA     
+ NA's   :319663                                     NA's   :319663  
+   wage_week        log_wage       educ_cont          exp             exp2     
+ Min.   : 5.00   Min.   :1.609   Min.   : 0.00   Min.   : 7.00   Min.   :  49  
+ 1st Qu.:29.25   1st Qu.:3.376   1st Qu.: 8.00   1st Qu.:21.00   1st Qu.: 441  
+ Median :40.38   Median :3.698   Median :12.00   Median :29.00   Median : 841  
+ Mean   :41.96   Mean   :3.625   Mean   :11.68   Mean   :29.92   Mean   :1035  
+ 3rd Qu.:51.61   3rd Qu.:3.944   3rd Qu.:16.00   3rd Qu.:38.00   3rd Qu.:1444  
+ Max.   :96.15   Max.   :4.566   Max.   :17.00   Max.   :66.00   Max.   :4356  
+ NA's   :83420   NA's   :83420   NA's   :529     NA's   :529     NA's   :529   
+ log_occscore_30 log_occscore_40 log_occscore_change   gd_cohort     
+ Min.   :1.099   Min.   :1.099   Min.   :-2.996      Min.   :0       
+ 1st Qu.:3.219   1st Qu.:3.219   1st Qu.: 0.000      1st Qu.:0       
+ Median :3.296   Median :3.296   Median : 0.000      Median :0       
+ Mean   :3.298   Mean   :3.298   Mean   :-0.013      Mean   :0       
+ 3rd Qu.:3.466   3rd Qu.:3.466   3rd Qu.: 0.000      3rd Qu.:0       
+ Max.   :4.382   Max.   :4.382   Max.   : 3.029      Max.   :0       
+ NA's   :8343    NA's   :50275   NA's   :57389       NA's   :224604  
+   is_utility    probit_w         xtile30          xtile40      
+ Min.   :0    Min.   :0.3134   Min.   :  1.00   Min.   :  1.00  
+ 1st Qu.:0    1st Qu.:0.6306   1st Qu.: 49.00   1st Qu.: 48.00  
+ Median :0    Median :0.8265   Median : 60.00   Median : 59.00  
+ Mean   :0    Mean   :1.0273   Mean   : 53.65   Mean   : 54.07  
+ 3rd Qu.:0    3rd Qu.:1.3287   3rd Qu.: 69.00   3rd Qu.: 69.00  
+ Max.   :0    Max.   :5.2062   Max.   :100.00   Max.   :100.00  
+              NA's   :11412    NA's   :8343     NA's   :50275   
+  xtile_change     log_occscore_change_tr xtile_change_tr 
+ Min.   :-99.000   Min.   :-0.916         Min.   :-66.00  
+ 1st Qu.: -1.000   1st Qu.: 0.000         1st Qu.: -1.00  
+ Median : -1.000   Median : 0.000         Median : -1.00  
+ Mean   : -0.713   Mean   :-0.005         Mean   : -0.88  
+ 3rd Qu.:  1.000   3rd Qu.: 0.000         3rd Qu.:  1.00  
+ Max.   : 98.000   Max.   : 0.742         Max.   : 65.00  
+ NA's   :57389     NA's   :62443          NA's   :62863   
+  histid1930         histid1940          clp_30_40        mlp_30_40     
+ Length:319663      Length:319663      Min.   :0.0000   Min.   :0.0000  
+ Class :character   Class :character   1st Qu.:0.0000   1st Qu.:0.0000  
+ Mode  :character   Mode  :character   Median :0.0000   Median :1.0000  
+                                       Mean   :0.2516   Mean   :0.5712  
+                                       3rd Qu.:1.0000   3rd Qu.:1.0000  
+                                       Max.   :1.0000   Max.   :1.0000  
+                                                                        
+   xgb_30_40      family_tree_30_40 direct_hint_30_40  profile_hint   
+ Min.   :0.0000   Min.   :0.000     Min.   :0.0000    Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.000     1st Qu.:0.0000    1st Qu.:0.0000  
+ Median :1.0000   Median :0.000     Median :1.0000    Median :0.0000  
+ Mean   :0.7331   Mean   :0.308     Mean   :0.6286    Mean   :0.4059  
+ 3rd Qu.:1.0000   3rd Qu.:1.000     3rd Qu.:1.0000    3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.000     Max.   :1.0000    Max.   :1.0000  
+                                                                      
+ implied_30_40       year1930      sample1930       serial1930      
+ Min.   :0.0000   Min.   :1930   Min.   :193004   Min.   :  169421  
+ 1st Qu.:1.0000   1st Qu.:1930   1st Qu.:193004   1st Qu.: 5661168  
+ Median :1.0000   Median :1930   Median :193004   Median :11969951  
+ Mean   :0.7713   Mean   :1930   Mean   :193004   Mean   :13886088  
+ 3rd Qu.:1.0000   3rd Qu.:1930   3rd Qu.:193004   3rd Qu.:22219682  
+ Max.   :1.0000   Max.   :1930   Max.   :193004   Max.   :31312859  
+                                                                    
+    hhwt1930   region1930     stateicp1930    statefip1930   countyicp1930   
+ Min.   :1   Min.   :11.00   Min.   : 1.00   Min.   : 1.00   Min.   :  10.0  
+ 1st Qu.:1   1st Qu.:12.00   1st Qu.:14.00   1st Qu.:17.00   1st Qu.: 270.0  
+ Median :1   Median :21.00   Median :24.00   Median :25.00   Median : 390.0  
+ Mean   :1   Mean   :23.66   Mean   :32.22   Mean   :26.95   Mean   : 870.7  
+ 3rd Qu.:1   3rd Qu.:32.00   3rd Qu.:51.00   3rd Qu.:39.00   3rd Qu.:1010.0  
+ Max.   :1   Max.   :42.00   Max.   :98.00   Max.   :55.00   Max.   :7600.0  
+                                                                             
+   city_1930     citypop1930        gq1930       ownershp1930   ownershpd1930  
+ Min.   :   5   Min.   :    0   Min.   :1.000   Min.   :0.000   Min.   : 0.00  
+ 1st Qu.:1452   1st Qu.: 1111   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:10.00  
+ Median :3730   Median : 2923   Median :1.000   Median :1.000   Median :10.00  
+ Mean   :3643   Mean   : 7208   Mean   :1.112   Mean   :1.424   Mean   :14.24  
+ 3rd Qu.:5370   3rd Qu.: 8219   3rd Qu.:1.000   3rd Qu.:2.000   3rd Qu.:20.00  
+ Max.   :7650   Max.   :33764   Max.   :4.000   Max.   :2.000   Max.   :20.00  
+                                                                               
+   rent301930     valueh1930       radio301930      pernum1930       perwt1930
+ Min.   :   0   Min.   :      0   Min.   :1.000   Min.   : 1.000   Min.   :1  
+ 1st Qu.:   0   1st Qu.:      0   1st Qu.:1.000   1st Qu.: 1.000   1st Qu.:1  
+ Median :   0   Median :   2500   Median :2.000   Median : 1.000   Median :1  
+ Mean   : 242   Mean   : 393668   Mean   :1.646   Mean   : 2.244   Mean   :1  
+ 3rd Qu.:  37   3rd Qu.:   7000   3rd Qu.:2.000   3rd Qu.: 3.000   3rd Qu.:1  
+ Max.   :9999   Max.   :9999999   Max.   :2.000   Max.   :60.000   Max.   :1  
+                                                                              
+   nchild1930        sex1930         age1930        marst1930    
+ Min.   :0.0000   Min.   :1.000   Min.   :22.00   Min.   :1.000  
+ 1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:29.00   1st Qu.:1.000  
+ Median :0.0000   Median :1.000   Median :36.00   Median :1.000  
+ Mean   :0.9418   Mean   :1.406   Mean   :37.58   Mean   :3.034  
+ 3rd Qu.:2.0000   3rd Qu.:2.000   3rd Qu.:45.00   3rd Qu.:6.000  
+ Max.   :9.0000   Max.   :2.000   Max.   :60.00   Max.   :6.000  
+                                                                 
+    race1930       raced1930       hispan1930        hispand1930     
+ Min.   :1.000   Min.   :100.0   Min.   :0.000000   Min.   :  0.000  
+ 1st Qu.:1.000   1st Qu.:100.0   1st Qu.:0.000000   1st Qu.:  0.000  
+ Median :1.000   Median :100.0   Median :0.000000   Median :  0.000  
+ Mean   :1.033   Mean   :103.3   Mean   :0.009998   Mean   :  1.087  
+ 3rd Qu.:1.000   3rd Qu.:100.0   3rd Qu.:0.000000   3rd Qu.:  0.000  
+ Max.   :6.000   Max.   :600.0   Max.   :4.000000   Max.   :480.000  
+                                                                     
+    bpl1930          bpld1930      nativity1930    citizen1930    
+ Min.   :  1.00   Min.   :  100   Min.   :1.000   Min.   :0.0000  
+ 1st Qu.: 20.00   1st Qu.: 2000   1st Qu.:1.000   1st Qu.:0.0000  
+ Median : 29.00   Median : 2900   Median :1.000   Median :0.0000  
+ Mean   : 61.68   Mean   : 6168   Mean   :2.129   Mean   :0.2058  
+ 3rd Qu.: 42.00   3rd Qu.: 4200   3rd Qu.:4.000   3rd Qu.:0.0000  
+ Max.   :900.00   Max.   :90020   Max.   :5.000   Max.   :4.0000  
+                                                                  
+  yrimmig1930        lit1930       empstat1930     empstatd1930  
+ Min.   :   0.0   Min.   :1.000   Min.   :1.000   Min.   :10.00  
+ 1st Qu.:   0.0   1st Qu.:4.000   1st Qu.:1.000   1st Qu.:10.00  
+ Median :   0.0   Median :4.000   Median :1.000   Median :10.00  
+ Mean   : 170.8   Mean   :3.979   Mean   :1.037   Mean   :10.37  
+ 3rd Qu.:   0.0   3rd Qu.:4.000   3rd Qu.:1.000   3rd Qu.:10.00  
+ Max.   :1930.0   Max.   :4.000   Max.   :3.000   Max.   :30.00  
+                                                                 
+  labforce1930    classwkr1930   classwkrd1930    occ19501930     ind19501930 
+ Min.   :1.000   Min.   :0.000   Min.   : 0.00   Min.   :  0.0   Min.   :888  
+ 1st Qu.:2.000   1st Qu.:2.000   1st Qu.:20.00   1st Qu.: 93.0   1st Qu.:888  
+ Median :2.000   Median :2.000   Median :20.00   Median :290.0   Median :888  
+ Mean   :1.997   Mean   :1.919   Mean   :19.25   Mean   :406.1   Mean   :909  
+ 3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:20.00   3rd Qu.:764.0   3rd Qu.:936  
+ Max.   :2.000   Max.   :2.000   Max.   :29.00   Max.   :984.0   Max.   :936  
+                                                                              
+  occscore1930  versionhist1930    year1940      sample1940    
+ Min.   : 0.0   Min.   :2       Min.   :1940   Min.   :194002  
+ 1st Qu.:24.0   1st Qu.:2       1st Qu.:1940   1st Qu.:194002  
+ Median :27.0   Median :2       Median :1940   Median :194002  
+ Mean   :27.1   Mean   :2       Mean   :1940   Mean   :194002  
+ 3rd Qu.:32.0   3rd Qu.:2       3rd Qu.:1940   3rd Qu.:194002  
+ Max.   :80.0   Max.   :2       Max.   :1940   Max.   :194002  
+                                                               
+   serial1940          hhwt1940   region1940     stateicp1940    statefip1940  
+ Min.   :    8837   Min.   :1   Min.   :11.00   Min.   : 1.00   Min.   : 1.00  
+ 1st Qu.: 8257702   1st Qu.:1   1st Qu.:12.00   1st Qu.:14.00   1st Qu.:17.00  
+ Median :14461819   Median :1   Median :21.00   Median :24.00   Median :25.00  
+ Mean   :17022607   Mean   :1   Mean   :23.75   Mean   :32.39   Mean   :26.99  
+ 3rd Qu.:27029600   3rd Qu.:1   3rd Qu.:32.00   3rd Qu.:51.00   3rd Qu.:39.00  
+ Max.   :37780660   Max.   :1   Max.   :42.00   Max.   :98.00   Max.   :56.00  
+                                                                               
+ countyicp1940       city1940     citypop1940        gq1940       ownershp1940 
+ Min.   :  10.0   Min.   :   0   Min.   :    0   Min.   :1.000   Min.   :0.00  
+ 1st Qu.: 270.0   1st Qu.:1190   1st Qu.:  549   1st Qu.:1.000   1st Qu.:1.00  
+ Median : 430.0   Median :3150   Median : 2823   Median :1.000   Median :1.00  
+ Mean   : 849.1   Mean   :3204   Mean   : 6659   Mean   :1.107   Mean   :1.38  
+ 3rd Qu.:1010.0   3rd Qu.:5330   3rd Qu.: 8160   3rd Qu.:1.000   3rd Qu.:2.00  
+ Max.   :8400.0   Max.   :7650   Max.   :33968   Max.   :6.000   Max.   :2.00  
+                                                                               
+ ownershpd1940    pernum1940       perwt1940   nchild1940       sex1940     
+ Min.   : 0.0   Min.   : 1.000   Min.   :1   Min.   :0.000   Min.   :1.000  
+ 1st Qu.:10.0   1st Qu.: 1.000   1st Qu.:1   1st Qu.:0.000   1st Qu.:1.000  
+ Median :10.0   Median : 1.000   Median :1   Median :0.000   Median :1.000  
+ Mean   :13.8   Mean   : 1.794   Mean   :1   Mean   :0.966   Mean   :1.404  
+ 3rd Qu.:20.0   3rd Qu.: 2.000   3rd Qu.:1   3rd Qu.:2.000   3rd Qu.:2.000  
+ Max.   :20.0   Max.   :60.000   Max.   :1   Max.   :9.000   Max.   :2.000  
+                                                                            
+    age1940        marst1940        race1940       raced1940    
+ Min.   :30.00   Min.   :1.000   Min.   :1.000   Min.   :100.0  
+ 1st Qu.:39.00   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:100.0  
+ Median :46.00   Median :1.000   Median :1.000   Median :100.0  
+ Mean   :47.61   Mean   :2.708   Mean   :1.033   Mean   :103.3  
+ 3rd Qu.:55.00   3rd Qu.:6.000   3rd Qu.:1.000   3rd Qu.:100.0  
+ Max.   :72.00   Max.   :6.000   Max.   :6.000   Max.   :600.0  
+                                                                
+   hispan1940       hispand1940         bpl1940          bpld1940    
+ Min.   :0.00000   Min.   :  0.000   Min.   :  1.00   Min.   :  100  
+ 1st Qu.:0.00000   1st Qu.:  0.000   1st Qu.: 20.00   1st Qu.: 2000  
+ Median :0.00000   Median :  0.000   Median : 29.00   Median : 2900  
+ Mean   :0.01119   Mean   :  1.259   Mean   : 61.68   Mean   : 6168  
+ 3rd Qu.:0.00000   3rd Qu.:  0.000   3rd Qu.: 42.00   3rd Qu.: 4200  
+ Max.   :4.00000   Max.   :498.000   Max.   :900.00   Max.   :90020  
+                                                                     
+  nativity1940     citizen1940       school1940     higrade1940   
+ Min.   :0.0000   Min.   :0.0000   Min.   :1.000   Min.   : 1.00  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:11.00  
+ Median :0.0000   Median :0.0000   Median :1.000   Median :15.00  
+ Mean   :0.1014   Mean   :0.2047   Mean   :1.018   Mean   :16.15  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:1.000   3rd Qu.:19.00  
+ Max.   :5.0000   Max.   :5.0000   Max.   :2.000   Max.   :99.00  
+                                                                  
+  higraded1940      educ1940        educd1940       empstat1940   
+ Min.   : 10.0   Min.   : 0.000   Min.   :  2.00   Min.   :1.000  
+ 1st Qu.:110.0   1st Qu.: 2.000   1st Qu.: 26.00   1st Qu.:1.000  
+ Median :150.0   Median : 6.000   Median : 60.00   Median :1.000  
+ Mean   :161.7   Mean   : 7.651   Mean   : 78.46   Mean   :1.368  
+ 3rd Qu.:190.0   3rd Qu.:10.000   3rd Qu.:100.00   3rd Qu.:1.000  
+ Max.   :999.0   Max.   :99.000   Max.   :999.00   Max.   :3.000  
+                                                                  
+  empstatd1940   labforce1940    classwkr1940   classwkrd1940    occ19501940   
+ Min.   :10.0   Min.   :1.000   Min.   :0.000   Min.   : 0.00   Min.   :  1.0  
+ 1st Qu.:10.0   1st Qu.:2.000   1st Qu.:2.000   1st Qu.:22.00   1st Qu.: 93.0  
+ Median :10.0   Median :2.000   Median :2.000   Median :24.00   Median :515.0  
+ Mean   :14.1   Mean   :1.829   Mean   :1.634   Mean   :19.22   Mean   :493.2  
+ 3rd Qu.:10.0   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:24.00   3rd Qu.:773.0  
+ Max.   :34.0   Max.   :2.000   Max.   :9.000   Max.   :98.00   Max.   :999.0  
+                                                                               
+  ind19501940     wkswork11940    wkswork21940    hrswork11940    hrswork21940 
+ Min.   :  0.0   Min.   : 0.00   Min.   :0.000   Min.   : 0.00   Min.   :0.00  
+ 1st Qu.:418.0   1st Qu.:32.00   1st Qu.:3.000   1st Qu.: 0.00   1st Qu.:0.00  
+ Median :888.0   Median :50.00   Median :6.000   Median :40.00   Median :5.00  
+ Mean   :670.1   Mean   :37.27   Mean   :4.053   Mean   :31.91   Mean   :3.83  
+ 3rd Qu.:896.0   3rd Qu.:52.00   3rd Qu.:6.000   3rd Qu.:45.00   3rd Qu.:6.00  
+ Max.   :997.0   Max.   :52.00   Max.   :6.000   Max.   :98.00   Max.   :8.00  
+                                                                               
+  incwage1940     incnonwg1940    occscore1940    migrate51940  migrate5d1940  
+ Min.   :   1    Min.   :1.000   Min.   : 0.00   Min.   :1.00   Min.   :10.00  
+ 1st Qu.:1370    1st Qu.:1.000   1st Qu.:20.00   1st Qu.:1.00   1st Qu.:10.00  
+ Median :1944    Median :1.000   Median :27.00   Median :1.00   Median :10.00  
+ Mean   :1954    Mean   :1.488   Mean   :23.72   Mean   :1.61   Mean   :16.64  
+ 3rd Qu.:2400    3rd Qu.:2.000   3rd Qu.:32.00   3rd Qu.:2.00   3rd Qu.:21.00  
+ Max.   :5001    Max.   :9.000   Max.   :80.00   Max.   :9.00   Max.   :90.00  
+ NA's   :74376                                                                 
+  migplac51940    migmet51940    migtype51940    migcity51940   migsea51940   
+ Min.   :  1.0   Min.   :   0   Min.   :1.000   Min.   :   1   Min.   :  1.0  
+ 1st Qu.: 26.0   1st Qu.:1680   1st Qu.:3.000   1st Qu.:1750   1st Qu.: 96.0  
+ Median :990.0   Median :4520   Median :3.000   Median :4570   Median :205.0  
+ Mean   :527.1   Mean   :4710   Mean   :3.165   Mean   :4834   Mean   :232.1  
+ 3rd Qu.:990.0   3rd Qu.:7040   3rd Qu.:4.000   3rd Qu.:6710   3rd Qu.:329.0  
+ Max.   :999.0   Max.   :9999   Max.   :9.000   Max.   :9999   Max.   :997.0  
+                                                                              
+  sameplac1940  versionhist1940  samesea51940   migcounty1940    keep_bool     
+ Min.   :1.00   Min.   :2       Min.   :1.000   Min.   :  10   Min.   :0.0000  
+ 1st Qu.:2.00   1st Qu.:2       1st Qu.:1.000   1st Qu.:9999   1st Qu.:1.0000  
+ Median :2.00   Median :2       Median :1.000   Median :9999   Median :1.0000  
+ Mean   :1.97   Mean   :2       Mean   :1.199   Mean   :9419   Mean   :0.8952  
+ 3rd Qu.:2.00   3rd Qu.:2       3rd Qu.:1.000   3rd Qu.:9999   3rd Qu.:1.0000  
+ Max.   :9.00   Max.   :2       Max.   :9.000   Max.   :9999   Max.   :1.0000  
+                                                                               
+      id              city_1940      city_1935         year     
+ Length:319663      Min.   :   5   Min.   :   5   Min.   :1930  
+ Class :character   1st Qu.:1452   1st Qu.:1452   1st Qu.:1930  
+ Mode  :character   Median :3730   Median :3730   Median :1930  
+                    Mean   :3643   Mean   :3643   Mean   :1930  
+                    3rd Qu.:5370   3rd Qu.:5370   3rd Qu.:1930  
+                    Max.   :7650   Max.   :7650   Max.   :1930  
+                                                                
+    state              source               RFC                 WPA           
+ Length:319663      Length:319663      Min.   :        0   Min.   :   246479  
+ Class :character   Class :character   1st Qu.:  7173518   1st Qu.: 14559656  
+ Mode  :character   Mode  :character   Median : 24847273   Median : 36012167  
+                                       Mean   : 68246022   Mean   : 68155728  
+                                       3rd Qu.: 93495873   3rd Qu.:110097644  
+                                       Max.   :268095338   Max.   :274365795  
+                                       NA's   :4296        NA's   :4296       
+     RELIEF             RLDF3329           pop_30         pop_20_30       
+ Min.   :   801456   Min.   :-0.6927   Min.   : 8.213   Min.   :-0.37711  
+ 1st Qu.: 24128048   1st Qu.:-0.4847   1st Qu.:11.619   1st Qu.: 0.09241  
+ Median : 58129292   Median :-0.4239   Median :12.586   Median : 0.19707  
+ Mean   :116579805   Mean   :-0.4090   Mean   :12.579   Mean   : 0.25529  
+ 3rd Qu.:184616746   3rd Qu.:-0.3240   3rd Qu.:13.619   3rd Qu.: 0.32704  
+ Max.   :477535798   Max.   :-0.1469   Max.   :15.032   Max.   : 2.13632  
+ NA's   :4296        NA's   :4296                                         
+ delta_loan_31_29  delta_loan_31_29_tr    region          connect_to_nyc  
+ Min.   :-3.1790   Min.   :-0.8804     Length:319663      Min.   :0.0000  
+ 1st Qu.:-0.1709   1st Qu.:-0.1700     Class :character   1st Qu.:0.0000  
+ Median :-0.0957   Median :-0.0957     Mode  :character   Median :1.0000  
+ Mean   :-0.1142   Mean   :-0.0925                        Mean   :0.6656  
+ 3rd Qu.:-0.0314   3rd Qu.:-0.0314                        3rd Qu.:1.0000  
+ Max.   : 0.8603   Max.   : 0.3734                        Max.   :1.0000  
+ NA's   :6190      NA's   :11487                          NA's   :9040    
+ connect_to_chi   connect_to_cle   connect_with_2_banks  hist_mean_ir  
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000       Min.   :4.000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000       1st Qu.:4.332  
+ Median :0.0000   Median :0.0000   Median :1.0000       Median :4.583  
+ Mean   :0.1267   Mean   :0.0372   Mean   :0.5729       Mean   :4.591  
+ 3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:1.0000       3rd Qu.:4.877  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000       Max.   :5.891  
+ NA's   :9040     NA's   :9040     NA's   :9040         NA's   :11867  
+ hist_mean_ir_w  share_1925_1929_t share_1920_1924_t share_1915_1919_t
+ Min.   :3.881   Min.   :0.0000    Min.   :0.0000    Min.   :0.0000   
+ 1st Qu.:4.302   1st Qu.:0.2277    1st Qu.:0.1927    1st Qu.:0.0450   
+ Median :4.513   Median :0.3595    Median :0.3129    Median :0.1157   
+ Mean   :4.528   Mean   :0.3507    Mean   :0.3200    Mean   :0.1299   
+ 3rd Qu.:4.779   3rd Qu.:0.4709    3rd Qu.:0.4299    3rd Qu.:0.1510   
+ Max.   :5.931   Max.   :0.9722    Max.   :0.9497    Max.   :0.7806   
+ NA's   :11867   NA's   :8675      NA's   :8675      NA's   :8675     
+ share_1900_1915_t years_since_w     check_moody          pop_i       
+ Min.   :0.0000    Min.   : 2.302   Min.   :-1.7679   Min.   :  2488  
+ 1st Qu.:0.0679    1st Qu.: 6.673   1st Qu.:-0.0085   1st Qu.: 41412  
+ Median :0.1836    Median : 8.424   Median : 0.0490   Median :109139  
+ Mean   :0.1994    Mean   : 8.733   Mean   : 0.1112   Mean   :131329  
+ 3rd Qu.:0.2600    3rd Qu.: 9.659   3rd Qu.: 0.2174   3rd Qu.:200563  
+ Max.   :1.0000    Max.   :19.163   Max.   : 0.8284   Max.   :354544  
+ NA's   :8675      NA's   :8675     NA's   :11573     NA's   :138531  
+  default_city       default       mill_rate_total    bond_rate     
+ Min.   :0.0000   Min.   :0.0000   Min.   :10.00    Min.   : 0.200  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:16.30    1st Qu.: 2.100  
+ Median :0.0000   Median :0.0000   Median :21.10    Median : 2.300  
+ Mean   :0.3334   Mean   :0.3427   Mean   :21.49    Mean   : 3.546  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:25.20    3rd Qu.: 4.800  
+ Max.   :1.0000   Max.   :1.0000   Max.   :39.40    Max.   :13.200  
+                                   NA's   :240891   NA's   :275171  
+   pc_rev_tax       real_rev_tax       real_pc_rev_tax  real_pc_rev_tax_log
+ Min.   :  6.081   Min.   :   126457   Min.   : 12.11   Min.   :2.494      
+ 1st Qu.: 19.679   1st Qu.:  5559986   1st Qu.: 39.20   1st Qu.:3.669      
+ Median : 30.361   Median : 17933974   Median : 60.48   Median :4.102      
+ Mean   : 32.682   Mean   : 41755720   Mean   : 65.10   Mean   :4.054      
+ 3rd Qu.: 43.443   3rd Qu.: 66359984   3rd Qu.: 86.54   3rd Qu.:4.461      
+ Max.   :120.777   Max.   :143834960   Max.   :240.59   Max.   :5.483      
+                                                                           
+ pc_rev_nontax     real_rev_nontax    real_pc_rev_nontax real_pc_rev_nontax_log
+ Min.   : 0.1811   Min.   :    4310   Min.   : 0.3608    Min.   :-1.020        
+ 1st Qu.:10.2768   1st Qu.: 2098506   1st Qu.:20.4716    1st Qu.: 3.019        
+ Median :13.7871   Median : 8839151   Median :27.4642    Median : 3.313        
+ Mean   :15.9681   Mean   :24089149   Mean   :31.8090    Mean   : 3.287        
+ 3rd Qu.:20.5088   3rd Qu.:32098100   3rd Qu.:40.8542    3rd Qu.: 3.710        
+ Max.   :49.8707   Max.   :91862928   Max.   :99.3440    Max.   : 4.599        
+                                                                               
+   pc_rev_ig         real_rev_ig       real_pc_rev_ig   real_pc_rev_ig_log
+ Min.   : 0.00000   Min.   :       0   Min.   : 0.000   Min.   :-6.1074   
+ 1st Qu.: 0.08986   1st Qu.:   12849   1st Qu.: 0.179   1st Qu.:-1.3151   
+ Median : 0.60295   Median :  418799   Median : 1.201   Median : 0.1832   
+ Mean   : 1.69594   Mean   : 2035491   Mean   : 3.378   Mean   :-0.0515   
+ 3rd Qu.: 2.39936   3rd Qu.: 2957482   3rd Qu.: 4.780   3rd Qu.: 1.6334   
+ Max.   :19.76809   Max.   :19172248   Max.   :39.379   Max.   : 3.6732   
+                                                        NA's   :23299     
+  pc_rev_debt      real_rev_debt       real_pc_rev_debt real_pc_rev_debt_log
+ Min.   :  0.000   Min.   :        0   Min.   :  0.00   Min.   :-4.832      
+ 1st Qu.:  5.568   1st Qu.:   639653   1st Qu.: 11.09   1st Qu.: 2.406      
+ Median : 12.805   Median :  4730492   Median : 25.51   Median : 3.356      
+ Mean   : 24.288   Mean   : 14112865   Mean   : 48.38   Mean   : 3.272      
+ 3rd Qu.: 44.664   3rd Qu.: 13731804   3rd Qu.: 88.97   3rd Qu.: 4.495      
+ Max.   :191.744   Max.   :112972192   Max.   :381.96   Max.   : 5.945      
+ NA's   :177387    NA's   :177387      NA's   :177387   NA's   :186115      
+ pc_rev_nontax_nondebt real_rev_nontax_nondebt real_pc_rev_nontax_nondebt
+ Min.   : 0.0000       Min.   :        0       Min.   :  0.000           
+ 1st Qu.: 0.7656       1st Qu.:   267526       1st Qu.:  1.525           
+ Median : 4.6062       Median :  1766189       Median :  9.176           
+ Mean   : 8.8738       Mean   : 13981137       Mean   : 17.677           
+ 3rd Qu.:11.4473       3rd Qu.:  8994111       3rd Qu.: 22.803           
+ Max.   :76.0778       Max.   :136459456       Max.   :151.549           
+                                                                         
+ real_pc_rev_nontax_nondebt_log pc_maint_dep_gen real_maint_dep_gen
+ Min.   :-6.936                 Min.   :0.3976   Min.   :   15854  
+ 1st Qu.: 1.356                 1st Qu.:1.8543   1st Qu.:  405243  
+ Median : 2.525                 Median :2.7271   Median : 1234645  
+ Mean   : 2.307                 Mean   :3.1061   Mean   : 6168390  
+ 3rd Qu.: 3.127                 3rd Qu.:4.2449   3rd Qu.: 5400040  
+ Max.   : 5.021                 Max.   :8.1775   Max.   :35853148  
+ NA's   :57846                                                     
+ real_pc_maint_dep_gen real_pc_maint_dep_gen_log pc_maint_dep_health
+ Min.   : 0.7919       Min.   :-0.2333           Min.   : 0.1219    
+ 1st Qu.: 3.6937       1st Qu.: 1.3066           1st Qu.: 2.3863    
+ Median : 5.4324       Median : 1.6924           Median : 3.5288    
+ Mean   : 6.1874       Mean   : 1.6679           Mean   : 3.6947    
+ 3rd Qu.: 8.4559       3rd Qu.: 2.1349           3rd Qu.: 4.7079    
+ Max.   :16.2898       Max.   : 2.7905           Max.   :11.2240    
+                                                                    
+ real_maint_dep_health real_pc_maint_dep_health real_pc_maint_dep_health_log
+ Min.   :    2902      Min.   : 0.2429          Min.   :-1.415              
+ 1st Qu.:  611459      1st Qu.: 4.7536          1st Qu.: 1.559              
+ Median : 1823711      Median : 7.0295          Median : 1.950              
+ Mean   : 6258092      Mean   : 7.3599          Mean   : 1.864              
+ 3rd Qu.: 7606182      3rd Qu.: 9.3782          3rd Qu.: 2.238              
+ Max.   :29234234      Max.   :22.3586          Max.   : 3.107              
+                                                                            
+ pc_maint_dep_road real_maint_dep_road real_pc_maint_dep_road
+ Min.   : 0.000    Min.   :       0    Min.   : 0.000        
+ 1st Qu.: 2.818    1st Qu.:  610347    1st Qu.: 5.614        
+ Median : 3.801    Median : 2117968    Median : 7.572        
+ Mean   : 3.894    Mean   : 5995925    Mean   : 7.757        
+ 3rd Qu.: 4.705    3rd Qu.: 7925593    3rd Qu.: 9.373        
+ Max.   :13.846    Max.   :24935574    Max.   :27.582        
+                                                             
+ real_pc_maint_dep_road_log pc_maint_dep_pp  real_maint_dep_pp 
+ Min.   :0.7773             Min.   : 1.325   Min.   :   42567  
+ 1st Qu.:1.7583             1st Qu.: 6.284   1st Qu.: 1424221  
+ Median :2.0651             Median : 8.656   Median : 4775036  
+ Mean   :2.0259             Mean   : 8.293   Mean   :13325903  
+ 3rd Qu.:2.2378             3rd Qu.: 9.909   3rd Qu.:16015827  
+ Max.   :3.3172             Max.   :16.563   Max.   :58674556  
+ NA's   :13354                                                 
+ real_pc_maint_dep_pp real_pc_maint_dep_pp_log pc_maint_dep_charity
+ Min.   : 2.639       Min.   :0.9705           Min.   : 0.000      
+ 1st Qu.:12.518       1st Qu.:2.5271           1st Qu.: 0.579      
+ Median :17.243       Median :2.8474           Median : 2.144      
+ Mean   :16.520       Mean   :2.7481           Mean   : 2.728      
+ 3rd Qu.:19.739       3rd Qu.:2.9826           3rd Qu.: 4.269      
+ Max.   :32.993       Max.   :3.4963           Max.   :10.672      
+                                                                   
+ real_maint_dep_charity real_pc_maint_dep_charity real_pc_maint_dep_charity_log
+ Min.   :       0       Min.   : 0.000            Min.   :-6.805               
+ 1st Qu.:  131044       1st Qu.: 1.153            1st Qu.: 0.550               
+ Median :  799757       Median : 4.270            Median : 1.496               
+ Mean   : 4591561       Mean   : 5.434            Mean   : 1.127               
+ 3rd Qu.: 6273395       3rd Qu.: 8.503            3rd Qu.: 2.146               
+ Max.   :21864706       Max.   :21.260            Max.   : 3.057               
+                                                  NA's   :20249                
+ pc_maint_dep_rec real_maint_dep_rec real_pc_maint_dep_rec
+ Min.   :0.0000   Min.   :       0   Min.   : 0.000       
+ 1st Qu.:0.9076   1st Qu.:  244055   1st Qu.: 1.808       
+ Median :1.5447   Median :  809030   Median : 3.077       
+ Mean   :1.6840   Mean   : 3061002   Mean   : 3.355       
+ 3rd Qu.:2.1399   3rd Qu.: 3411408   3rd Qu.: 4.263       
+ Max.   :6.7338   Max.   :17209130   Max.   :13.414       
+                                                          
+ real_pc_maint_dep_rec_log pc_maint_dep_school real_maint_dep_school
+ Min.   :-5.697            Min.   : 0.000      Min.   :       0     
+ 1st Qu.: 0.603            1st Qu.: 2.121      1st Qu.:  922607     
+ Median : 1.124            Median :13.668      Median : 5369392     
+ Mean   : 1.000            Mean   :11.812      Mean   :18100641     
+ 3rd Qu.: 1.450            3rd Qu.:17.020      3rd Qu.:21533044     
+ Max.   : 2.596            Max.   :35.987      Max.   :91931752     
+ NA's   :540                                                        
+ real_pc_maint_dep_school real_pc_maint_dep_school_log pc_maint_dep_other
+ Min.   : 0.000           Min.   :-4.036               Min.   :0.0000    
+ 1st Qu.: 4.226           1st Qu.: 3.091               1st Qu.:0.8469    
+ Median :27.227           Median : 3.342               Median :1.6624    
+ Mean   :23.530           Mean   : 2.908               Mean   :2.0262    
+ 3rd Qu.:33.904           3rd Qu.: 3.534               3rd Qu.:2.8492    
+ Max.   :71.688           Max.   : 4.272               Max.   :8.3076    
+                          NA's   :32092                                  
+ real_maint_dep_other real_pc_maint_dep_other real_pc_maint_dep_other_log
+ Min.   :       0     Min.   : 0.000          Min.   :-7.7145            
+ 1st Qu.:  186191     1st Qu.: 1.687          1st Qu.: 0.5233            
+ Median :  832028     Median : 3.311          Median : 1.1974            
+ Mean   : 3871182     Mean   : 4.036          Mean   : 1.0238            
+ 3rd Qu.: 7762699     3rd Qu.: 5.676          3rd Qu.: 1.7362            
+ Max.   :19163748     Max.   :16.549          Max.   : 2.8063            
+                                              NA's   :1801               
+     pc_pse          real_pse         real_pc_pse      real_pc_pse_log 
+ Min.   : 0.000   Min.   :       0   Min.   :  0.000   Min.   :-6.947  
+ 1st Qu.: 2.217   1st Qu.:  592592   1st Qu.:  4.416   1st Qu.: 1.493  
+ Median : 3.054   Median : 2199798   Median :  6.083   Median : 1.806  
+ Mean   : 6.570   Mean   : 8937784   Mean   : 13.088   Mean   : 1.913  
+ 3rd Qu.: 6.041   3rd Qu.: 7010060   3rd Qu.: 12.033   3rd Qu.: 2.488  
+ Max.   :78.141   Max.   :98749480   Max.   :155.660   Max.   : 5.048  
+ NA's   :163      NA's   :163        NA's   :163       NA's   :3621    
+   pc_outlay        real_outlay        real_pc_outlay   real_pc_outlay_log
+ Min.   :  0.000   Min.   :        0   Min.   :  0.00   Min.   :-1.178    
+ 1st Qu.:  8.444   1st Qu.:  2231415   1st Qu.: 16.82   1st Qu.: 2.823    
+ Median : 17.567   Median :  8162259   Median : 34.99   Median : 3.556    
+ Mean   : 19.437   Mean   : 39141155   Mean   : 38.72   Mean   : 3.296    
+ 3rd Qu.: 26.843   3rd Qu.: 33201474   3rd Qu.: 53.47   3rd Qu.: 3.979    
+ Max.   :142.629   Max.   :234599744   Max.   :284.12   Max.   : 5.649    
+                                                        NA's   :758       
+  pc_interest     real_interest      real_pc_interest real_pc_interest_log
+ Min.   : 0.000   Min.   :       0   Min.   : 0.000   Min.   :-8.399      
+ 1st Qu.: 3.742   1st Qu.:  786998   1st Qu.: 7.454   1st Qu.: 2.009      
+ Median : 6.211   Median : 3795920   Median :12.373   Median : 2.516      
+ Mean   : 6.018   Mean   :10533312   Mean   :11.987   Mean   : 2.195      
+ 3rd Qu.: 8.328   3rd Qu.:14921012   3rd Qu.:16.591   3rd Qu.: 2.809      
+ Max.   :21.311   Max.   :42787224   Max.   :42.452   Max.   : 3.748      
+                                                      NA's   :395         
+ pc_repay_debt     real_repay_debt    real_pc_repay_debt real_pc_repay_debt_log
+ Min.   :  0.214   Min.   :    4880   Min.   :  0.426    Min.   :-0.852        
+ 1st Qu.:  4.494   1st Qu.:  640920   1st Qu.:  8.952    1st Qu.: 2.192        
+ Median : 11.933   Median : 4297410   Median : 23.772    Median : 3.168        
+ Mean   : 18.741   Mean   : 9225490   Mean   : 37.332    Mean   : 2.993        
+ 3rd Qu.: 35.216   3rd Qu.:11082537   3rd Qu.: 70.151    3rd Qu.: 4.251        
+ Max.   :186.480   Max.   :59901748   Max.   :371.475    Max.   : 5.917        
+ NA's   :177387    NA's   :177387     NA's   :177387     NA's   :177387        
+  pc_pay_other    real_pay_other      real_pc_pay_other real_pc_pay_other_log
+ Min.   : 0.000   Min.   :        0   Min.   :  0.000   Min.   :-5.302       
+ 1st Qu.: 2.897   1st Qu.:   209532   1st Qu.:  5.771   1st Qu.: 2.089       
+ Median : 8.597   Median :  1026800   Median : 17.125   Median : 2.841       
+ Mean   :14.152   Mean   : 15066424   Mean   : 28.191   Mean   : 2.673       
+ 3rd Qu.:19.470   3rd Qu.: 30061914   3rd Qu.: 38.785   3rd Qu.: 3.673       
+ Max.   :96.215   Max.   :126220840   Max.   :191.664   Max.   : 5.256       
+ NA's   :177387   NA's   :177387      NA's   :177387    NA's   :184218       
+  pc_debt_bond   real_debt_bond      real_pc_debt_bond real_pc_debt_bond_log
+ Min.   :  0.0   Min.   :0.000e+00   Min.   :  0.0     Min.   :-0.8651      
+ 1st Qu.: 79.6   1st Qu.:1.479e+07   1st Qu.:158.6     1st Qu.: 5.0662      
+ Median :103.9   Median :6.912e+07   Median :207.0     Median : 5.3326      
+ Mean   :123.7   Mean   :2.084e+08   Mean   :246.3     Mean   : 5.2596      
+ 3rd Qu.:176.1   3rd Qu.:2.921e+08   3rd Qu.:350.8     3rd Qu.: 5.8602      
+ Max.   :427.6   Max.   :1.076e+09   Max.   :851.8     Max.   : 6.7474      
+                                                       NA's   :285          
+ pc_debt_total    real_debt_total     real_pc_debt_total real_pc_debt_total_log
+ Min.   :  0.00   Min.   :0.000e+00   Min.   :  0.0      Min.   :-0.8651       
+ 1st Qu.: 87.53   1st Qu.:1.895e+07   1st Qu.:174.4      1st Qu.: 5.1612       
+ Median :129.18   Median :8.652e+07   Median :257.3      Median : 5.5504       
+ Mean   :150.17   Mean   :2.942e+08   Mean   :299.2      Mean   : 5.4555       
+ 3rd Qu.:214.08   3rd Qu.:2.921e+08   3rd Qu.:426.5      3rd Qu.: 6.0555       
+ Max.   :427.62   Max.   :1.440e+09   Max.   :851.8      Max.   : 6.7474       
+                                                         NA's   :285           
+  pc_debt_temp    real_debt_temp      real_pc_debt_temp real_pc_debt_temp_log
+ Min.   : 0.000   Min.   :        0   Min.   :  0.000   Min.   :-3.039       
+ 1st Qu.: 0.950   1st Qu.:   369149   1st Qu.:  1.892   1st Qu.: 1.946       
+ Median : 5.075   Median :  2191235   Median : 10.109   Median : 2.731       
+ Mean   :18.492   Mean   : 73882417   Mean   : 36.836   Mean   : 2.622       
+ 3rd Qu.:21.224   3rd Qu.: 17111538   3rd Qu.: 42.278   3rd Qu.: 4.176       
+ Max.   :87.824   Max.   :590698496   Max.   :174.947   Max.   : 5.164       
+ NA's   :79057    NA's   :79057       NA's   :79057     NA's   :109176       
+ pc_assess_total  real_assess_total   real_pc_assess_total
+ Min.   : 384.6   Min.   :1.023e+07   Min.   : 766        
+ 1st Qu.:1150.5   1st Qu.:3.021e+08   1st Qu.:2292        
+ Median :1677.5   Median :9.149e+08   Median :3362        
+ Mean   :1664.6   Mean   :2.419e+09   Mean   :3345        
+ 3rd Qu.:2119.8   3rd Qu.:4.009e+09   3rd Qu.:4314        
+ Max.   :3272.2   Max.   :9.645e+09   Max.   :9553        
+ NA's   :6082     NA's   :4011        NA's   :4011        
+ real_pc_assess_total_log pc_maint_dep_total real_maint_dep_total
+ Min.   :6.641            Min.   : 6.017     Min.   :   136824   
+ 1st Qu.:7.737            1st Qu.:25.991     1st Qu.:  6761828   
+ Median :8.120            Median :40.319     Median : 21801076   
+ Mean   :8.053            Mean   :37.239     Mean   : 61372698   
+ 3rd Qu.:8.370            3rd Qu.:46.028     3rd Qu.: 66016980   
+ Max.   :9.165            Max.   :72.426     Max.   :291419712   
+ NA's   :4011                                                    
+ real_pc_maint_dep_total real_pc_maint_dep_total_log  pc_rev_total   
+ Min.   : 11.99          Min.   :2.484               Min.   : 10.15  
+ 1st Qu.: 51.77          1st Qu.:3.947               1st Qu.: 38.75  
+ Median : 80.32          Median :4.386               Median : 52.22  
+ Mean   : 74.18          Mean   :4.203               Mean   : 57.52  
+ 3rd Qu.: 91.69          3rd Qu.:4.518               3rd Qu.: 70.95  
+ Max.   :144.28          Max.   :4.972               Max.   :142.87  
+                                                                     
+ real_rev_total      real_pc_rev_total real_pc_rev_total_log pc_maint_outlay  
+ Min.   :   249608   Min.   : 20.22    Min.   :3.007         Min.   :  7.569  
+ 1st Qu.: 10271779   1st Qu.: 77.20    1st Qu.:4.346         1st Qu.: 34.228  
+ Median : 31221646   Median :104.03    Median :4.645         Median : 57.413  
+ Mean   : 79826005   Mean   :114.59    Mean   :4.646         Mean   : 56.675  
+ 3rd Qu.:154395696   3rd Qu.:141.33    3rd Qu.:4.951         3rd Qu.: 78.207  
+ Max.   :260656832   Max.   :284.60    Max.   :5.651         Max.   :163.062  
+                                                                              
+ real_maint_outlay   real_pc_maint_outlay real_pc_maint_outlay_log
+ Min.   :   174508   Min.   : 15.08       Min.   :2.713           
+ 1st Qu.: 10122950   1st Qu.: 68.18       1st Qu.:4.222           
+ Median : 33533746   Median :114.37       Median :4.739           
+ Mean   :100513851   Mean   :112.90       Mean   :4.600           
+ 3rd Qu.: 94696336   3rd Qu.:155.79       3rd Qu.:5.049           
+ Max.   :526019456   Max.   :324.82       Max.   :5.783           
+                                                                  
+    pop_i_k         bonds_to_assess    int_to_rev      debt_to_rev   
+ Min.   :   2.488   Min.   :0.0000   Min.   :0.0000   Min.   :0.000  
+ 1st Qu.:  99.748   1st Qu.:0.0480   1st Qu.:0.1150   1st Qu.:1.503  
+ Median : 264.033   Median :0.0702   Median :0.1945   Median :2.485  
+ Mean   : 630.705   Mean   :0.0775   Mean   :0.2102   Mean   :2.912  
+ 3rd Qu.: 792.522   3rd Qu.:0.1017   3rd Qu.:0.2901   3rd Qu.:3.944  
+ Max.   :2971.598   Max.   :0.2852   Max.   :0.7599   Max.   :7.273  
+                    NA's   :4011                                     
+     WPA_pc            RFC_pc         RELIEF_pc      bonds_to_assess29_lev
+ Min.   :  6.194   Min.   :  0.00   Min.   : 20.14   Min.   :0.0000       
+ 1st Qu.: 45.932   1st Qu.: 22.81   1st Qu.: 86.89   1st Qu.:0.0449       
+ Median : 63.856   Median : 39.47   Median :101.08   Median :0.0682       
+ Mean   : 63.498   Mean   : 60.24   Mean   :104.92   Mean   :0.0682       
+ 3rd Qu.: 73.389   3rd Qu.: 64.29   3rd Qu.:119.92   3rd Qu.:0.0911       
+ Max.   :170.602   Max.   :899.66   Max.   :209.20   Max.   :0.1448       
+ NA's   :4296      NA's   :4296     NA's   :4296     NA's   :20989        
+ int_to_rev29_lev debt_to_rev29_lev temp_to_bonds29_lev debt_total29_lev
+ Min.   :0.000    Min.   :0.000     Min.   :0.000       Min.   :0.0000  
+ 1st Qu.:0.103    1st Qu.:1.348     1st Qu.:0.010       1st Qu.:0.7606  
+ Median :0.169    Median :1.858     Median :0.047       Median :1.2414  
+ Mean   :0.182    Mean   :2.190     Mean   :0.100       Mean   :1.2663  
+ 3rd Qu.:0.250    3rd Qu.:2.959     3rd Qu.:0.135       3rd Qu.:1.7654  
+ Max.   :0.395    Max.   :5.119     Max.   :0.518       Max.   :2.2815  
+ NA's   :33723    NA's   :57955     NA's   :79057       NA's   :27971   
+ bonds_to_assess24_lev int_to_rev24_lev debt_to_rev24_lev temp_to_bonds24_lev
+ Min.   :0.004         Min.   :0.000    Min.   :0.000     Min.   :0.000      
+ 1st Qu.:0.043         1st Qu.:0.094    1st Qu.:1.562     1st Qu.:0.015      
+ Median :0.068         Median :0.156    Median :2.273     Median :0.054      
+ Mean   :0.063         Mean   :0.157    Mean   :2.264     Mean   :0.089      
+ 3rd Qu.:0.080         3rd Qu.:0.187    3rd Qu.:2.784     3rd Qu.:0.135      
+ Max.   :0.126         Max.   :0.373    Max.   :4.500     Max.   :0.469      
+ NA's   :71038         NA's   :45807    NA's   :54632     NA's   :79057      
+ debt_total24_lev    gd_shock        bta_moody        itr_moody    
+ Min.   :0.000    Min.   :0.0145   Min.   :0.0000   Min.   :0.002  
+ 1st Qu.:0.709    1st Qu.:0.1974   1st Qu.:0.0118   1st Qu.:0.031  
+ Median :0.924    Median :0.2826   Median :0.0173   Median :0.040  
+ Mean   :0.976    Mean   :0.3053   Mean   :0.0191   Mean   :0.050  
+ 3rd Qu.:1.401    3rd Qu.:0.4223   3rd Qu.:0.0244   3rd Qu.:0.063  
+ Max.   :1.691    Max.   :0.7924   Max.   :0.0578   Max.   :0.192  
+ NA's   :57660    NA's   :8675     NA's   :16117    NA's   :37110  
+   dtr_moody        dt_moody        gd_shock_q      bank_shock    
+ Min.   :0.000   Min.   :0.0000   Min.   :1.000   Min.   :0.0000  
+ 1st Qu.:0.412   1st Qu.:0.2450   1st Qu.:1.000   1st Qu.:0.0462  
+ Median :0.538   Median :0.3349   Median :1.000   Median :0.1095  
+ Mean   :0.649   Mean   :0.3821   Mean   :1.317   Mean   :0.1915  
+ 3rd Qu.:0.763   3rd Qu.:0.4626   3rd Qu.:2.000   3rd Qu.:0.2930  
+ Max.   :1.935   Max.   :0.9682   Max.   :2.000   Max.   :2.0124  
+ NA's   :35548   NA's   :16100    NA's   :8675    NA's   :7173    
+ bank_shock_any   bank_shock_median    connect         rating_int    
+ Min.   :0.0000   Min.   :0.0000    Min.   :0.0000   Min.   : 1.000  
+ 1st Qu.:1.0000   1st Qu.:0.0000    1st Qu.:0.0000   1st Qu.:10.000  
+ Median :1.0000   Median :0.0000    Median :1.0000   Median :10.000  
+ Mean   :0.9346   Mean   :0.3905    Mean   :0.6774   Mean   : 9.964  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000    3rd Qu.:1.0000   3rd Qu.:10.000  
+ Max.   :1.0000   Max.   :1.0000    Max.   :1.0000   Max.   :10.000  
+                  NA's   :7173      NA's   :9040     NA's   :9040    
+  rating_int2        source_      delta_loan_31_29_q     state_     
+ Min.   : 8.000   Min.   :1.000   Min.   :1.000      Min.   : 1.00  
+ 1st Qu.:10.000   1st Qu.:2.000   1st Qu.:1.000      1st Qu.:13.00  
+ Median :10.000   Median :2.000   Median :2.000      Median :19.00  
+ Mean   : 9.975   Mean   :2.901   Mean   :1.521      Mean   :22.27  
+ 3rd Qu.:10.000   3rd Qu.:4.000   3rd Qu.:2.000      3rd Qu.:34.00  
+ Max.   :10.000   Max.   :8.000   Max.   :2.000      Max.   :47.00  
+ NA's   :85896                    NA's   :11487                     
+    region_       post_detail    city_age       outlay_24_29    
+ Min.   :1.000   Min.   :3    Min.   : 12.0    Min.   :  1.839  
+ 1st Qu.:1.000   1st Qu.:3    1st Qu.: 58.0    1st Qu.: 54.318  
+ Median :2.000   Median :3    Median : 80.0    Median :111.190  
+ Mean   :2.124   Mean   :3    Mean   :106.2    Mean   :114.389  
+ 3rd Qu.:3.000   3rd Qu.:3    3rd Qu.:121.0    3rd Qu.:176.225  
+ Max.   :4.000   Max.   :3    Max.   :310.0    Max.   :579.251  
+                              NA's   :238789   NA's   :34280    
+ outlay_24_29_q  pc_total_num_nonhouse_21_29 pc_total_usd_nonhouse_21_29
+ Min.   :1.00    Min.   :0.004               Min.   :  11.64            
+ 1st Qu.:3.00    1st Qu.:0.032               1st Qu.: 174.32            
+ Median :4.00    Median :0.045               Median : 236.43            
+ Mean   :3.47    Mean   :0.060               Mean   : 239.71            
+ 3rd Qu.:4.00    3rd Qu.:0.086               3rd Qu.: 291.88            
+ Max.   :4.00    Max.   :0.519               Max.   :2772.45            
+ NA's   :34280   NA's   :47900               NA's   :47900              
+ pc_total_num_pub_21_29 pc_total_usd_pub_21_29 pc_total_num_house_21_29
+ Min.   :0.000          Min.   :  3.347        Min.   :0.009           
+ 1st Qu.:0.001          1st Qu.: 53.569        1st Qu.:0.031           
+ Median :0.001          Median : 67.616        Median :0.044           
+ Mean   :0.002          Mean   : 70.976        Mean   :0.096           
+ 3rd Qu.:0.002          3rd Qu.: 80.615        3rd Qu.:0.076           
+ Max.   :0.017          Max.   :916.457        Max.   :6.197           
+ NA's   :47900          NA's   :47900          NA's   :47900           
+ pc_total_usd_house_21_29 pc_total_n_fam_21_29    pop_cat           id_      
+ Min.   :  55.46          Min.   :0.010        Min.   :1.000   Min.   :   2  
+ 1st Qu.: 235.35          1st Qu.:0.049        1st Qu.:3.000   1st Qu.: 132  
+ Median : 309.54          Median :0.072        Median :3.000   Median : 308  
+ Mean   : 365.03          Mean   :0.125        Mean   :2.795   Mean   : 351  
+ 3rd Qu.: 538.15          3rd Qu.:0.106        3rd Qu.:3.000   3rd Qu.: 460  
+ Max.   :2320.98          Max.   :5.646        Max.   :3.000   Max.   :2195  
+ NA's   :47900            NA's   :47900                                      
+ pc_outlay_24_29  pc_repay_debt_24_29 outlay_24_29_std pc_outlay_24_29_std
+ Min.   : NA      Min.   : NA         Min.   :-0.701   Min.   : NA        
+ 1st Qu.: NA      1st Qu.: NA         1st Qu.:-0.069   1st Qu.: NA        
+ Median : NA      Median : NA         Median : 0.615   Median : NA        
+ Mean   :NaN      Mean   :NaN         Mean   : 0.654   Mean   :NaN        
+ 3rd Qu.: NA      3rd Qu.: NA         3rd Qu.: 1.398   3rd Qu.: NA        
+ Max.   : NA      Max.   : NA         Max.   : 6.250   Max.   : NA        
+ NA's   :319663   NA's   :319663      NA's   :34280    NA's   :319663     
+ pc_repay_debt_24_29_std    counter      bonds_to_assess29_lev_std
+ Min.   : NA             Min.   :11.00   Min.   :-1.2263          
+ 1st Qu.: NA             1st Qu.:15.00   1st Qu.: 0.2045          
+ Median : NA             Median :15.00   Median : 0.9466          
+ Mean   :NaN             Mean   :15.58   Mean   : 0.9471          
+ 3rd Qu.: NA             3rd Qu.:18.00   3rd Qu.: 1.6777          
+ Max.   : NA             Max.   :18.00   Max.   : 3.3871          
+ NA's   :319663                          NA's   :20989            
+ int_to_rev29_lev_std debt_to_rev29_lev_std temp_to_bonds29_lev_std
+ Min.   :-1.262       Min.   :-1.326        Min.   :-0.758         
+ 1st Qu.:-0.052       1st Qu.:-0.011        1st Qu.:-0.671         
+ Median : 0.732       Median : 0.487        Median :-0.347         
+ Mean   : 0.879       Mean   : 0.811        Mean   : 0.113         
+ 3rd Qu.: 1.688       3rd Qu.: 1.562        3rd Qu.: 0.410         
+ Max.   : 3.396       Max.   : 3.669        Max.   : 3.740         
+ NA's   :33723        NA's   :57955         NA's   :79057          
+ debt_total29_lev_std bonds_to_assess24_lev_std int_to_rev24_lev_std
+ Min.   :-1.1272      Min.   :-1.399            Min.   :-1.226      
+ 1st Qu.: 0.5435      1st Qu.: 0.027            1st Qu.:-0.061      
+ Median : 1.5997      Median : 0.955            Median : 0.710      
+ Mean   : 1.6545      Mean   : 0.785            Mean   : 0.717      
+ 3rd Qu.: 2.7508      3rd Qu.: 1.401            3rd Qu.: 1.095      
+ Max.   : 3.8844      Max.   : 3.060            Max.   : 3.389      
+ NA's   :27971        NA's   :71038             NA's   :45807       
+ debt_to_rev24_lev_std temp_to_bonds24_lev_std debt_total24_lev_std
+ Min.   :-1.403        Min.   :-0.695          Min.   :-1.194      
+ 1st Qu.: 0.201        1st Qu.:-0.590          1st Qu.: 0.799      
+ Median : 0.932        Median :-0.318          Median : 1.404      
+ Mean   : 0.923        Mean   :-0.076          Mean   : 1.551      
+ 3rd Qu.: 1.458        3rd Qu.: 0.250          3rd Qu.: 2.746      
+ Max.   : 3.220        Max.   : 2.581          Max.   : 3.561      
+ NA's   :54632         NA's   :79057           NA's   :57660       
+ bonds_to_assess29_lev_moody_std int_to_rev29_lev_moody_std
+ Min.   :-1.5689                 Min.   :-1.325            
+ 1st Qu.:-0.5155                 1st Qu.:-0.515            
+ Median :-0.0208                 Median :-0.276            
+ Mean   : 0.1336                 Mean   : 0.029            
+ 3rd Qu.: 0.6083                 3rd Qu.: 0.379            
+ Max.   : 3.5919                 Max.   : 4.001            
+ NA's   :16117                   NA's   :37110             
+ debt_to_rev29_lev_moody_std debt_total29_lev_moody_std   pop_i_std     
+ Min.   :-1.667              Min.   :-1.6410            Min.   :-0.456  
+ 1st Qu.:-0.532              1st Qu.:-0.2190            1st Qu.: 0.380  
+ Median :-0.184              Median : 0.3026            Median : 1.833  
+ Mean   : 0.123              Mean   : 0.5768            Mean   : 2.310  
+ 3rd Qu.: 0.437              3rd Qu.: 1.0439            3rd Qu.: 3.796  
+ Max.   : 3.667              Max.   : 3.9786            Max.   : 7.101  
+ NA's   :35548               NA's   :16100              NA's   :138531  
+ pc_assess_total_std  RLDF3329_std       pop_30_std      check_moody_std  
+ Min.   :-1.434      Min.   :-2.1961   Min.   :-0.9118   Min.   :-5.1172  
+ 1st Qu.: 0.068      1st Qu.:-0.6239   1st Qu.: 1.5841   1st Qu.:-0.0632  
+ Median : 1.102      Median :-0.1644   Median : 2.2928   Median : 0.1020  
+ Mean   : 1.076      Mean   :-0.0513   Mean   : 2.2880   Mean   : 0.2805  
+ 3rd Qu.: 1.969      3rd Qu.: 0.5906   3rd Qu.: 3.0504   3rd Qu.: 0.5857  
+ Max.   : 4.229      Max.   : 1.9299   Max.   : 4.0859   Max.   : 2.3407  
+ NA's   :6082        NA's   :4296                        NA's   :11573    
+ bta_moody_std     itr_moody_std    dtr_moody_std     dt_moody_std    
+ Min.   :-1.5783   Min.   :-1.324   Min.   :-1.686   Min.   :-1.6571  
+ 1st Qu.:-0.5056   1st Qu.:-0.578   1st Qu.:-0.555   1st Qu.:-0.2318  
+ Median :-0.0019   Median :-0.358   Median :-0.208   Median : 0.2911  
+ Mean   : 0.1554   Mean   :-0.077   Mean   : 0.097   Mean   : 0.5660  
+ 3rd Qu.: 0.6387   3rd Qu.: 0.247   3rd Qu.: 0.410   3rd Qu.: 1.0341  
+ Max.   : 3.6768   Max.   : 3.586   Max.   : 3.627   Max.   : 3.9757  
+ NA's   :16117     NA's   :37110    NA's   :35548    NA's   :16100    
+ is_local_admin_30 is_local_admin_40  left_public          age2     
+ Min.   :1         Min.   :0.0000    Min.   :0.0000   Min.   : 484  
+ 1st Qu.:1         1st Qu.:0.0000    1st Qu.:0.0000   1st Qu.: 841  
+ Median :1         Median :1.0000    Median :0.0000   Median :1296  
+ Mean   :1         Mean   :0.5361    Mean   :0.4639   Mean   :1515  
+ 3rd Qu.:1         3rd Qu.:1.0000    3rd Qu.:1.0000   3rd Qu.:2025  
+ Max.   :1         Max.   :1.0000    Max.   :1.0000   Max.   :3600  
+                                                                    
+      age3             age4           enter_public    enter_anything  
+ Min.   : 10648   Min.   :  234256   Min.   : NA      Min.   : NA     
+ 1st Qu.: 24389   1st Qu.:  707281   1st Qu.: NA      1st Qu.: NA     
+ Median : 46656   Median : 1679616   Median : NA      Median : NA     
+ Mean   : 65072   Mean   : 2950513   Mean   :NaN      Mean   :NaN     
+ 3rd Qu.: 91125   3rd Qu.: 4100625   3rd Qu.: NA      3rd Qu.: NA     
+ Max.   :216000   Max.   :12960000   Max.   : NA      Max.   : NA     
+                                     NA's   :319663   NA's   :319663  
+   ind_change      stay_public      in_public_30  in_public_40   
+ Min.   :0.0000   Min.   :0.0000   Min.   :1     Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:1     1st Qu.:0.0000  
+ Median :0.0000   Median :1.0000   Median :1     Median :1.0000  
+ Mean   :0.4795   Mean   :0.5361   Mean   :1     Mean   :0.5361  
+ 3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1     3rd Qu.:1.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1     Max.   :1.0000  
+                                                                 
+      move            stayer        job_changer       blow_it_up    
+ Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  
+ 1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  
+ Median :0.0000   Median :0.0000   Median :0.0000   Median :0.0000  
+ Mean   :0.2131   Mean   :0.4594   Mean   :0.3275   Mean   :0.1364  
+ 3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:0.0000  
+ Max.   :1.0000   Max.   :1.0000   Max.   :1.0000   Max.   :1.0000  
+                                                                    
+  opportunity        stayer_all     job_changer_all  blow_it_up_all  
+ Min.   :0.00000   Min.   : NA      Min.   : NA      Min.   : NA     
+ 1st Qu.:0.00000   1st Qu.: NA      1st Qu.: NA      1st Qu.: NA     
+ Median :0.00000   Median : NA      Median : NA      Median : NA     
+ Mean   :0.07671   Mean   :NaN      Mean   :NaN      Mean   :NaN     
+ 3rd Qu.:0.00000   3rd Qu.: NA      3rd Qu.: NA      3rd Qu.: NA     
+ Max.   :1.00000   Max.   : NA      Max.   : NA      Max.   : NA     
+                   NA's   :319663   NA's   :319663   NA's   :319663  
+ opportunity_all  stay_public_nomove     status       status_all    
+ Min.   : NA      Min.   :0.0000     Min.   :1.00   Min.   : NA     
+ 1st Qu.: NA      1st Qu.:0.0000     1st Qu.:1.00   1st Qu.: NA     
+ Median : NA      Median :0.0000     Median :2.00   Median : NA     
+ Mean   :NaN      Mean   :0.4594     Mean   :1.83   Mean   :NaN     
+ 3rd Qu.: NA      3rd Qu.:1.0000     3rd Qu.:2.00   3rd Qu.: NA     
+ Max.   : NA      Max.   :1.0000     Max.   :4.00   Max.   : NA     
+ NA's   :319663                                     NA's   :319663  
+   wage_week        log_wage       educ_cont          exp             exp2     
+ Min.   : 5.00   Min.   :1.609   Min.   : 0.00   Min.   : 7.00   Min.   :  49  
+ 1st Qu.:29.25   1st Qu.:3.376   1st Qu.: 8.00   1st Qu.:21.00   1st Qu.: 441  
+ Median :40.38   Median :3.698   Median :12.00   Median :29.00   Median : 841  
+ Mean   :41.96   Mean   :3.625   Mean   :11.68   Mean   :29.92   Mean   :1035  
+ 3rd Qu.:51.61   3rd Qu.:3.944   3rd Qu.:16.00   3rd Qu.:38.00   3rd Qu.:1444  
+ Max.   :96.15   Max.   :4.566   Max.   :17.00   Max.   :66.00   Max.   :4356  
+ NA's   :83420   NA's   :83420   NA's   :529     NA's   :529     NA's   :529   
+ log_occscore_30 log_occscore_40 log_occscore_change   gd_cohort     
+ Min.   :1.099   Min.   :1.099   Min.   :-2.996      Min.   :0       
+ 1st Qu.:3.219   1st Qu.:3.219   1st Qu.: 0.000      1st Qu.:0       
+ Median :3.296   Median :3.296   Median : 0.000      Median :0       
+ Mean   :3.298   Mean   :3.298   Mean   :-0.013      Mean   :0       
+ 3rd Qu.:3.466   3rd Qu.:3.466   3rd Qu.: 0.000      3rd Qu.:0       
+ Max.   :4.382   Max.   :4.382   Max.   : 3.029      Max.   :0       
+ NA's   :8343    NA's   :50275   NA's   :57389       NA's   :224604  
+   is_utility    probit_w         xtile30          xtile40      
+ Min.   :0    Min.   :0.3134   Min.   :  1.00   Min.   :  1.00  
+ 1st Qu.:0    1st Qu.:0.6306   1st Qu.: 49.00   1st Qu.: 48.00  
+ Median :0    Median :0.8265   Median : 60.00   Median : 59.00  
+ Mean   :0    Mean   :1.0273   Mean   : 53.65   Mean   : 54.07  
+ 3rd Qu.:0    3rd Qu.:1.3287   3rd Qu.: 69.00   3rd Qu.: 69.00  
+ Max.   :0    Max.   :5.2062   Max.   :100.00   Max.   :100.00  
+              NA's   :11412    NA's   :8343     NA's   :50275   
+  xtile_change     log_occscore_change_tr xtile_change_tr 
+ Min.   :-99.000   Min.   :-0.916         Min.   :-66.00  
+ 1st Qu.: -1.000   1st Qu.: 0.000         1st Qu.: -1.00  
+ Median : -1.000   Median : 0.000         Median : -1.00  
+ Mean   : -0.713   Mean   :-0.005         Mean   : -0.88  
+ 3rd Qu.:  1.000   3rd Qu.: 0.000         3rd Qu.:  1.00  
+ Max.   : 98.000   Max.   : 0.742         Max.   : 65.00  
+ NA's   :57389     NA's   :62443          NA's   :62863   
+[1] 870.7002
+% latex table generated in R 4.5.2 by xtable 1.8-4 package
+% Mon Dec 15 19:07:30 2025
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrrrrr}
+  \hline
+Variable & N & Mean & SD & Median & 25 pct & 75 pct \\ 
+  \hline
+Population (k) & 12602 & 40.83 & 154.02 & 7.95 & 4.99 & 19.56 \\ 
+  Total revenue, excluding debt issuance & 12602 & 84.65 & 81.68 & 64.88 & 39.15 & 112.99 \\ 
+  Tax revenue & 12602 & 47.45 & 38.66 & 32.64 & 21.02 & 66.82 \\ 
+  All non-tax revenue (earnings) & 12602 & 26.46 & 51.04 & 18.91 & 8.67 & 34.94 \\ 
+  Debt receipts & 11717 & 26.01 & 70.13 & 3.93 & 0.00 & 32.23 \\ 
+  All other non-tax, non-debt receipts & 12602 & 10.74 & 21.31 & 2.81 & 0.00 & 13.78 \\ 
+  Payments: Total service & 12602 & 48.75 & 39.42 & 33.09 & 21.30 & 68.57 \\ 
+  Payments: government administration & 12602 & 4.72 & 3.59 & 4.04 & 2.71 & 5.79 \\ 
+  Payments: health and sanitation & 12602 & 3.84 & 4.75 & 2.81 & 1.01 & 5.36 \\ 
+  Payments: roads and highways & 12602 & 7.86 & 6.24 & 7.14 & 4.52 & 10.35 \\ 
+  Payments: protection of persons and property & 12602 & 9.94 & 9.77 & 8.79 & 5.24 & 13.01 \\ 
+  Payments: charities, welfare, and corrections & 12602 & 5.45 & 10.19 & 0.49 & 0.00 & 5.70 \\ 
+  Payments: recreation & 12602 & 1.47 & 2.53 & 0.81 & 0.13 & 2.05 \\ 
+  Payments: school and libraries & 12602 & 11.99 & 17.61 & 1.00 & 0.00 & 27.66 \\ 
+  Other service payments & 12602 & 3.48 & 8.54 & 1.10 & 0.17 & 4.01 \\ 
+  Public utilites & 10340 & 12.76 & 60.23 & 6.89 & 3.31 & 13.28 \\ 
+  Interest & 12602 & 5.28 & 15.01 & 3.13 & 1.16 & 6.57 \\ 
+  Capital outlays & 12602 & 12.50 & 24.36 & 4.69 & 0.78 & 15.49 \\ 
+  All other non-maintenance, non-outlay payments & 11717 & 11.09 & 20.31 & 4.37 & 0.11 & 13.59 \\ 
+  Total debt & 12599 & 123.87 & 312.22 & 73.23 & 32.63 & 148.81 \\ 
+  Total bonded debt & 12602 & 111.14 & 305.27 & 67.47 & 28.26 & 132.04 \\ 
+  Assessed value of property & 9833 & 2685.44 & 3209.81 & 2283.07 & 1679.40 & 3013.03 \\ 
+  Defaulted 1930 - 1937 (any district) & 12602 & 0.13 & 0.34 & 0.00 & 0.00 & 0.00 \\ 
+  Defaulted 1930 - 1937 (city) & 12602 & 0.12 & 0.33 & 0.00 & 0.00 & 0.00 \\ 
+  Bond debt / assessed value & 9833 & 0.04 & 0.04 & 0.03 & 0.02 & 0.06 \\ 
+  Interest payment / tax revenue & 12602 & 0.11 & 0.13 & 0.08 & 0.04 & 0.15 \\ 
+  Debt / total revenue & 12599 & 1.41 & 1.56 & 1.11 & 0.55 & 1.91 \\ 
+   \hline
+\end{tabular}
+\caption{City Level Revenue and Expenditure, 1924--1943} 
+\end{table}
