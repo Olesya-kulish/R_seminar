@@ -1687,3 +1687,48 @@ Population (k) & 12602 & 40.83 & 154.02 & 7.95 & 4.99 & 19.56 \\
 \end{tabular}
 \caption{City Level Revenue and Expenditure, 1924--1943} 
 \end{table}
+% latex table generated in R 4.5.2 by xtable 1.8-4 package
+% Mon Dec 15 19:09:59 2025
+\begin{table}[ht]
+\centering
+\begin{tabular}{lrrrrrr}
+  \hline
+Variable & N & Mean & SD & Median & 25 pct & 75 pct \\ 
+  \hline
+Population (k) & 12602 & 40.83 & 154.02 & 7.95 & 4.99 & 19.56 \\ 
+  Total revenue, excluding debt issuance & 12602 & 84.65 & 81.68 & 64.88 & 39.15 & 112.99 \\ 
+  Tax revenue & 12602 & 47.45 & 38.66 & 32.64 & 21.02 & 66.82 \\ 
+  All non-tax revenue (earnings) & 12602 & 26.46 & 51.04 & 18.91 & 8.67 & 34.94 \\ 
+  Debt receipts & 11717 & 26.01 & 70.13 & 3.93 & 0.00 & 32.23 \\ 
+  All other non-tax, non-debt receipts & 12602 & 10.74 & 21.31 & 2.81 & 0.00 & 13.78 \\ 
+  Payments: Total service & 12602 & 48.75 & 39.42 & 33.09 & 21.30 & 68.57 \\ 
+  Payments: government administration & 12602 & 4.72 & 3.59 & 4.04 & 2.71 & 5.79 \\ 
+  Payments: health and sanitation & 12602 & 3.84 & 4.75 & 2.81 & 1.01 & 5.36 \\ 
+  Payments: roads and highways & 12602 & 7.86 & 6.24 & 7.14 & 4.52 & 10.35 \\ 
+  Payments: protection of persons and property & 12602 & 9.94 & 9.77 & 8.79 & 5.24 & 13.01 \\ 
+  Payments: charities, welfare, and corrections & 12602 & 5.45 & 10.19 & 0.49 & 0.00 & 5.70 \\ 
+  Payments: recreation & 12602 & 1.47 & 2.53 & 0.81 & 0.13 & 2.05 \\ 
+  Payments: school and libraries & 12602 & 11.99 & 17.61 & 1.00 & 0.00 & 27.66 \\ 
+  Other service payments & 12602 & 3.48 & 8.54 & 1.10 & 0.17 & 4.01 \\ 
+  Public utilites & 10340 & 12.76 & 60.23 & 6.89 & 3.31 & 13.28 \\ 
+  Interest & 12602 & 5.28 & 15.01 & 3.13 & 1.16 & 6.57 \\ 
+  Capital outlays & 12602 & 12.50 & 24.36 & 4.69 & 0.78 & 15.49 \\ 
+  All other non-maintenance, non-outlay payments & 11717 & 11.09 & 20.31 & 4.37 & 0.11 & 13.59 \\ 
+  Total debt & 12599 & 123.87 & 312.22 & 73.23 & 32.63 & 148.81 \\ 
+  Total bonded debt & 12602 & 111.14 & 305.27 & 67.47 & 28.26 & 132.04 \\ 
+  Assessed value of property & 9833 & 2685.44 & 3209.81 & 2283.07 & 1679.40 & 3013.03 \\ 
+  Defaulted 1930 - 1937 (any district) & 12602 & 0.13 & 0.34 & 0.00 & 0.00 & 0.00 \\ 
+  Defaulted 1930 - 1937 (city) & 12602 & 0.12 & 0.33 & 0.00 & 0.00 & 0.00 \\ 
+  Bond debt / assessed value & 9833 & 0.04 & 0.04 & 0.03 & 0.02 & 0.06 \\ 
+  Interest payment / tax revenue & 12602 & 0.11 & 0.13 & 0.08 & 0.04 & 0.15 \\ 
+  Debt / total revenue & 12599 & 1.41 & 1.56 & 1.11 & 0.55 & 1.91 \\ 
+   \hline
+\end{tabular}
+\caption{City Level Revenue and Expenditure, 1924--1943} 
+\end{table}
+package 'plyr' successfully unpacked and MD5 sums checked
+package 'gridExtra' successfully unpacked and MD5 sums checked
+package 'reshape2' successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+	C:\Users\Corne\AppData\Local\Temp\Rtmpagx5PF\downloaded_packages
