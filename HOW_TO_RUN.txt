@@ -1,0 +1,92 @@
+===============================================================================
+HOW TO RUN THIS R REPLICATION PACKAGE
+===============================================================================
+
+STEP 1: Install required R packages (one-time setup)
+-----------------------------------------------------
+Open R or RStudio and run:
+
+    install.packages(c("haven", "dplyr", "fixest", "tibble", "purrr", "flextable"))
+
+
+STEP 2: Set working directory
+------------------------------
+Set R's working directory to the project root folder containing this README:
+
+    setwd("path/to/R_seminar")
+
+
+STEP 3: Run the automated replication
+--------------------------------------
+Execute the master runner script:
+
+    source("scripts/run_all_tables_with_log.r")
+
+This single command will:
+  ✓ Load the original replication data files (data/*.dta)
+  ✓ Run all table scripts automatically
+  ✓ Generate all tables in output/ folder
+  ✓ Create a complete execution log (output/run_log.txt)
+
+
+STEP 4: Review outputs
+----------------------
+All outputs are saved to the "output/" folder:
+
+  - run_log.txt ..................... Full execution log (sink)
+  - run_status.csv .................. Per-script success/failure status
+  - summary_stats_city1.csv/png ..... Table 1 Panel A
+  - summary_stats_city_panelC.csv/png Table 1 Panel C
+  - table_II_cols_1_2_5.csv/png ..... Table II
+  - table_III_A_cols_1_4.csv/png .... Table III Panel A
+  - table_IV_both_panels_col3.csv/png Table IV Column 3 (both panels)
+
+Tables are provided in multiple formats:
+  - CSV for data processing
+  - PNG for visual inspection
+  - TEX for LaTeX inclusion (where applicable)
+
+
+===============================================================================
+REQUIREMENTS CHECKLIST (as per instructor)
+===============================================================================
+
+✅ Code starts by loading original replication data
+   → scripts/run_all_tables_with_log.r loads data/*.dta files first
+
+✅ Code is annotated and self-explanatory
+   → All scripts include comprehensive inline comments
+
+✅ README file describes usage
+   → See README.md and this file (HOW_TO_RUN.txt)
+
+✅ Automated tables are produced
+   → Tables generated as CSV/PNG, not just raw regression output
+
+✅ Log file showing execution
+   → output/run_log.txt created via sink()
+
+
+===============================================================================
+TROUBLESHOOTING
+===============================================================================
+
+Q: Script fails with "package not found"
+A: Install missing packages: install.packages("packagename")
+
+Q: "Cannot open file" error
+A: Ensure working directory is set correctly with setwd()
+
+Q: Want to run scripts individually?
+A: Each script can be run standalone:
+   source("scripts/Table_1.r")
+   source("scripts/Table_II.r")
+   source("scripts/Table_III_A.r")
+   source("scripts/Table_IV_PanelA.r")
+
+
+===============================================================================
+For additional details, see:
+  - README.md ...................... Full project documentation
+  - FINAL_PACKAGE_SUMMARY.txt ...... Comprehensive replication notes
+===============================================================================

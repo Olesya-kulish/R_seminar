@@ -1,0 +1,233 @@
+# Quick Visual Guide
+
+## RUN THESE IN RSTUDIO (Copy-Paste Ready)
+
+### Step 1: Set Working Directory
+```r
+setwd("c:\\Users\\olesy\\OneDrive\\Dokumente\\uni\\R_Seminar\\R_seminar")
+```
+
+### Step 2: Check Variable Issue (2 minutes)
+```r
+source("check_vs_check_moody.r")
+```
+
+**You'll see something like:**
+```
+=== CHECKING check vs check_moody ===
+
+1. Do both variables exist?
+   check exists: TRUE
+   check_moody exists: TRUE
+
+2. Summary statistics for both:
+   check:
+   - Min: -0.3456
+   - Max: 0.2987
+   ...
+
+6. If using 'check' instead of 'check_moody', what happens to Table IV N?
+   N with 'check' filter: 3829
+   N with 'check_moody' filter: 3748
+
+   ✓✓✓ USING 'check' GIVES US THE RIGHT ANSWER (3829)! ✓✓✓
+```
+
+→ **IF YOU SEE THE CHECKMARKS: The problem is found! Update your code.**
+
+---
+
+### Step 3: Full Diagnostic (2 minutes)
+```r
+source("diagnostic_quick_check.r")
+```
+
+**You'll see output like:**
+```
+====================================================================
+TABLE IV, PANEL A: DIAGNOSTIC CHECK
+====================================================================
+
+STEP 1: Examining check_moody variable
+check_moody: min= -0.298, max= 0.297
+check_moody missing: 45
+
+range                        count    pct
+< -0.2                       3621     19%
+IN RANGE [-0.2, 0.2]         15202    81%
+> 0.2                        1543     8%
+
+N after year and check filters: 3900
+...
+
+STEP 3: Impact of real_pc_outlay > 0 filter
+N with real_pc_outlay: 3900
+N with real_pc_outlay > 0: 3748
+
+====================================================================
+TABLE IV EXPECTED N: 3829 | YOUR N: 3748
+Difference: -81
+====================================================================
+
+====================================================================
+TABLE III, PANEL A: DIAGNOSTIC CHECK
+====================================================================
+
+STEP 4: Balance check
+Unique cities in final sample: 681
+Years per city (expected if balanced): 17
+Expected N if balanced: 11,577
+Actual N: 11,577
+Excess observations: 0
+
+✓ BALANCED PANEL
+
+Year distribution in final sample:
+year    n
+1924   681
+1925   681
+...
+1943   681
+
+====================================================================
+TABLE III EXPECTED N: 10903 | YOUR N: 11,577
+Difference: 674
+====================================================================
+```
+
+→ **Save this output and compare to expected values**
+
+---
+
+## How to Fix Issues
+
+### Fix #1: If Table IV says to use 'check' instead of 'check_moody'
+
+**In scripts/Table_IV_PanelA.r, change line:**
+```r
+# OLD:
+filter(check_moody < 0.2 & check_moody > -0.2)
+
+# TO NEW:
+filter(check < 0.2 & check > -0.2)
+```
+
+Then re-run the model → Should get N=3829! ✓
+
+---
+
+### Fix #2: If Table III shows too many cities (681 vs 641)
+
+**In scripts/Table_III_A.r, change:**
+```r
+# After this line:
+df_complete <- df %>%
+  filter(!is.na(post_detail)) %>%
+  filter(!is.na(real_pc_maint_dep_total_log)) %>%
+  filter(!is.na(pop_30), !is.na(pop_20_30)) %>%
+  filter(!is.na(real_pc_rev_total_log), !is.na(L_real_pc_rev_total_log)) %>%
+  filter(!is.na(leverage)) %>%
+  
+  # ADD THIS: Keep only balanced panels (all 17 years)
+  group_by(id_) %>%
+  filter(n() == 17) %>%
+  ungroup()
+```
+
+Then re-run the model → Should get N=10,903! ✓
+
+---
+
+## What to Look For in Diagnostic Output
+
+### Table IV Success Criteria:
+- ✓ `check_moody` distribution shows most obs in [-0.2, 0.2] range
+- ✓ Using `check` gives N=3829 (or using `check_moody` gives N=3829)
+- ✓ N after year + check filter: ~3900
+- ✓ N after real_pc_outlay > 0: ~3829-3850
+
+### Table III Success Criteria:
+- ✓ Unique cities: 641 (or close to it)
+- ✓ Balance check shows: "✓ BALANCED PANEL"
+- ✓ All years 1924-1943 (except 1939-1940) present with equal city counts
+- ✓ Final N: 10,900-10,910
+
+---
+
+## Visual Flowchart
+
+```
+START
+  ↓
+Run check_vs_check_moody.r
+  ↓
+[Does it show checkmarks?] ← YES → Update Table_IV to use 'check'
+  ↓ NO                           ↓
+  ↓                          Continue
+  ↓
+Run diagnostic_quick_check.r
+  ↓
+[Check city count in Table III]
+  ↓
+[681 cities?] → YES → Add balance filter to Table_III_A.r
+  ↓ NO
+  ↓
+[Some other issue] → Check HOW_TO_COMPARE_TO_STATA.md
+  ↓
+Update scripts with fixes
+  ↓
+Rerun both models
+  ↓
+[Do N values match Stata?]
+  ↓ YES
+✓✓✓ SUCCESS! ✓✓✓
+```
+
+---
+
+## File Locations
+
+### Diagnostic Scripts:
+- `diagnostic_quick_check.r` - Easy to read, visual output
+- `check_vs_check_moody.r` - Checks variable issue
+
+### Interpretation Guides:
+- `README_DIAGNOSTICS.md` - Start here
+- `HOW_TO_COMPARE_TO_STATA.md` - Detailed explanation
+- `DIAGNOSTIC_GUIDE.md` - Technical reference
+
+### Scripts to Fix:
+- `scripts/Table_IV_PanelA.r` - Line ~20
+- `scripts/Table_III_A.r` - Line ~55-65
+
+---
+
+## Common Questions
+
+**Q: Which script should I run first?**
+A: `check_vs_check_moody.r` - It's the quickest and might solve Table IV
+
+**Q: What if the diagnostics show something I don't understand?**
+A: Read HOW_TO_COMPARE_TO_STATA.md - It explains every possible output
+
+**Q: Will these diagnostics show me the final answer?**
+A: Yes! They'll either:
+   - Show you need to change a variable name
+   - Show you need to add a balance filter
+   - Show you something else is wrong (with clear numbers)
+
+**Q: Do I need to edit these diagnostic scripts?**
+A: No! They're ready to run as-is. Just source() them in RStudio.
+
+---
+
+## Success = Matched N Values
+
+Once fixed:
+- Table IV N = 3829 ✓
+- Table III N = 10,903 ✓
+- Coefficients and SEs match Stata ✓
+
+That's when you know your replication is correct!
+
+Good luck! You've got this. 🚀
