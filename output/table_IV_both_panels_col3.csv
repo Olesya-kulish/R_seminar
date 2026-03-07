@@ -1,9 +1,0 @@
-"panel","estimator","treatment","outcome","period","coefficient","se","n"
-"A","Poisson","debt_to_rev29_lev_moody_std","real_pc_outlay","1924-1926",-0.0893895743975675,0.0483621919622831,4039
-"A","Poisson","debt_to_rev29_lev_moody_std","real_pc_outlay","1929-1933",-0.175348486119844,0.0669348973934311,4039
-"A","Poisson","debt_to_rev29_lev_moody_std","real_pc_outlay","1934-1938",-0.345601508548991,0.0837320317550842,4039
-"A","Poisson","debt_to_rev29_lev_moody_std","real_pc_outlay","1941-1943",-0.23353621306863,0.120629866392454,4039
-"B","OLS","debt_to_rev29_lev_moody_std","real_pc_maint_dep_total_log","1924-1926",0.0110610925165353,0.0243347910488378,4039
-"B","OLS","debt_to_rev29_lev_moody_std","real_pc_maint_dep_total_log","1929-1933",-0.0228197759009636,0.00897939914965623,4039
-"B","OLS","debt_to_rev29_lev_moody_std","real_pc_maint_dep_total_log","1934-1938",-0.039558119134187,0.0157574360572229,4039
-"B","OLS","debt_to_rev29_lev_moody_std","real_pc_maint_dep_total_log","1941-1943",-0.0589788744616162,0.0232873366423114,4039

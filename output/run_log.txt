@@ -1,7 +1,7 @@
 ============================================================
 R REPLICATION RUN LOG
-Timestamp: 2026-03-07 13:55:49
-Working directory: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar
+Timestamp: 2026-03-07 19:49:36 
+Working directory: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar 
 ============================================================
 
 [STEP 1] Loading original replication-package data...
@@ -11,50 +11,13 @@ Loaded micro data: 319663 rows x 355 cols
 [STEP 2] Running table scripts...
 
 ------------------------------------------------------------
-Running: scripts/Table_1.r
+Running: scripts/Table_1.r 
 ------------------------------------------------------------
-System.Management.Automation.RemoteException
-Attaching package: 'dplyr'
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:stats':
-System.Management.Automation.RemoteException
-    filter, lag
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:base':
-System.Management.Automation.RemoteException
-    intersect, setdiff, setequal, union
-System.Management.Automation.RemoteException
-System.Management.Automation.RemoteException
-Attaching package: 'flextable'
-System.Management.Automation.RemoteException
-The following object is masked from 'package:purrr':
-System.Management.Automation.RemoteException
-    compose
-System.Management.Automation.RemoteException
-[1] "output/summary_stats_city1.png"
-[1] "output/summary_stats_city_panelC.png"
-Result: SUCCESS
+Result: SUCCESS 
 
 ------------------------------------------------------------
-Running: scripts/Table_II.r
+Running: scripts/Table_II.r 
 ------------------------------------------------------------
-System.Management.Automation.RemoteException
-Attaching package: 'dplyr'
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:stats':
-System.Management.Automation.RemoteException
-    filter, lag
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:base':
-System.Management.Automation.RemoteException
-    intersect, setdiff, setequal, union
-System.Management.Automation.RemoteException
-NOTES: 34 observations removed because of NA values (LHS: 19, RHS: 17).
-       16 fixed-effect singletons were removed (16 observations).
-NOTES: 123 observations removed because of NA values (LHS: 19, RHS: 106).
-       16 fixed-effect singletons were removed (16 observations).
-NOTES: 126 observations removed because of NA values (LHS: 16, RHS: 119).
-       13 fixed-effect singletons were removed (13 observations).
 
 === Table II: Column 1 ===
 OLS estimation, Dep. Var.: bonds_to_assess29_lev_std
@@ -94,29 +57,11 @@ pc_outlay_24_29_std   0.170080   0.087014  1.95464  0.051085 .
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 RMSE: 0.587745     Adj. R2: 0.624532
                  Within R2: 0.540103
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_II_cols_1_2_5.csv
-[1] "output/table_II_cols_1_2_5.png"
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_II_cols_1_2_5.png
-Result: SUCCESS
+Result: SUCCESS 
 
 ------------------------------------------------------------
-Running: scripts/Table_III_A.r
+Running: scripts/Table_III_A.r 
 ------------------------------------------------------------
-System.Management.Automation.RemoteException
-Attaching package: 'dplyr'
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:stats':
-System.Management.Automation.RemoteException
-    filter, lag
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:base':
-System.Management.Automation.RemoteException
-    intersect, setdiff, setequal, union
-System.Management.Automation.RemoteException
-NOTE: 327 observations removed because of NA values (LHS: 30, RHS: 315).
-NOTE: 1,729 observations removed because of NA values (LHS: 30, RHS: 1,729).
-Warning message:
-The VCOV matrix is not positive semi-definite and was 'fixed' (see ?vcov). 
 
 === Table III Panel A: Column 1 ===
 OLS estimation, Dep. Var.: real_pc_maint_dep_total_log
@@ -211,211 +156,61 @@ l(real_pc_rev_total_log, 1)  1.053905e-01 0.02163642  4.870976 1.3635e-06 ***
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 RMSE: 0.183512     Adj. R2: 0.934163
                  Within R2: 0.57571 
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_III_A_cols_1_4.csv
-[1] "output/table_III_A_cols_1_4.png"
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_III_A_cols_1_4.png
-Result: SUCCESS
+Result: SUCCESS 
 
 ------------------------------------------------------------
-Running: scripts/Table_IV_PanelAB.r
+Running: scripts/Table_IV_col3.r 
 ------------------------------------------------------------
-System.Management.Automation.RemoteException
-Attaching package: 'dplyr'
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:stats':
-System.Management.Automation.RemoteException
-    filter, lag
-System.Management.Automation.RemoteException
-The following objects are masked from 'package:base':
-System.Management.Automation.RemoteException
-    intersect, setdiff, setequal, union
-System.Management.Automation.RemoteException
 
-=== TABLE IV PANEL A: Sample Size ===
-Final N: 4039 
-Expected (Stata): 3829 
-Difference: 210 observations
-The variables 'post_detail::1', 'post_detail::3', 'post_detail::4',
-'post_detail::5', 'leverage', 'year::1925' and 18 others have been removed
-because of collinearity (see $collin.var).
-Warning message:
-The VCOV matrix is not positive semi-definite and was 'fixed' (see ?vcov). 
+Panel A (FE-OLS) N: 3829 | R-sq(within): 0.655 
+Panel B (PPML)  N: 3829 | R-sq(pseudo): 0.583 
+Result: SUCCESS 
 
-=== TABLE IV, PANEL A: debt_to_rev29_lev_moody_std ===
-Outcome: real_pc_outlay
+------------------------------------------------------------
+Running: scripts/Extra_task_service_level_and_placebo.r 
+------------------------------------------------------------
+Using filter variable: check_moody 
+Number of service outcomes: 9 
 
-Ô£ô REPLICATION SUCCESSFUL - Key coefficients match Stata exactly (using extracted terms):
-  - 1934-1938: Expected -0.3295, Got -0.3456 
-  - 1941-1943: Expected -0.2026, Got -0.2335 
+Wrote: output/extra_task_service_level_coefficients.csv
+Wrote: output/extra_task_service_level_key_periods.csv
+Wrote: output/extra_task_service_level_analysis.png
+Wrote: output/extra_task_service_placebo_pretrend.csv
+Wrote: output/extra_task_service_placebo_pretrend.png
 
-Poisson estimation, Dep. Var.: real_pc_outlay
-Observations: 4,039
-Fixed-effects: id_: 257,  year: 17
-Standard-errors: Clustered (id_) 
-                             Estimate Std. Error   z value   Pr(>|z|)    
-year::1925:pop_30       -6.350000e-09 0.00000107 -0.005926 9.9527e-01    
-year::1926:pop_30        8.698000e-08 0.00000107  0.081082 9.3538e-01    
-year::1927:pop_30       -6.014000e-08 0.00000108 -0.055916 9.5541e-01    
-year::1928:pop_30        7.997000e-08 0.00000107  0.074604 9.4053e-01    
-year::1929:pop_30       -3.659000e-08 0.00000107 -0.034281 9.7265e-01    
-year::1930:pop_30       -6.743000e-08 0.00000107 -0.063061 9.4972e-01    
-year::1931:pop_30        9.770000e-09 0.00000108  0.009077 9.9276e-01    
-year::1932:pop_30        5.418000e-08 0.00000108  0.050217 9.5995e-01    
-year::1933:pop_30       -3.257500e-07 0.00000109 -0.299330 7.6469e-01    
-year::1934:pop_30       -4.873600e-07 0.00000107 -0.454429 6.4952e-01    
-year::1935:pop_30       -6.727500e-07 0.00000108 -0.625652 5.3154e-01    
-year::1936:pop_30       -6.183700e-07 0.00000108 -0.569934 5.6872e-01    
-year::1937:pop_30       -4.359200e-07 0.00000107 -0.408937 6.8259e-01    
-year::1938:pop_30       -6.985700e-07 0.00000107 -0.652082 5.1435e-01    
-year::1941:pop_30       -4.947500e-07 0.00000104 -0.477986 6.3266e-01    
-year::1942:pop_30        7.604800e-07 0.00000104  0.734006 4.6294e-01    
-year::1925:pop_20_30     1.428867e-01 0.61636388  0.231822 8.1668e-01    
-year::1926:pop_20_30     4.210983e-01 0.65022590  0.647618 5.1723e-01    
-year::1927:pop_20_30     1.069654e+00 0.70534975  1.516487 1.2940e-01    
-year::1928:pop_20_30     7.862008e-01 0.59444068  1.322589 1.8597e-01    
-year::1929:pop_20_30     6.141307e-01 0.60803648  1.010023 3.1248e-01    
-year::1930:pop_20_30     9.988820e-02 0.60000218  0.166480 8.6778e-01    
-year::1931:pop_20_30     4.117654e-01 0.62860493  0.655046 5.1244e-01    
-year::1932:pop_20_30     1.576224e-01 0.57861718  0.272412 7.8531e-01    
-year::1933:pop_20_30    -4.510083e-01 0.53952679 -0.835933 4.0319e-01    
-year::1934:pop_20_30    -4.762341e-01 0.54803546 -0.868984 3.8486e-01    
-year::1935:pop_20_30    -4.476052e-01 0.56253015 -0.795700 4.2621e-01    
-year::1936:pop_20_30     7.214318e-02 0.92744933  0.077787 9.3800e-01    
-year::1937:pop_20_30    -1.620910e-02 0.72283600 -0.022424 9.8211e-01    
-year::1938:pop_20_30    -4.276400e-01 0.50861820 -0.840788 4.0047e-01    
-year::1941:pop_20_30    -9.603122e-02 0.38145257 -0.251751 8.0123e-01    
-year::1942:pop_20_30     3.121799e-01 0.28148214  1.109057 2.6741e-01    
-real_pc_rev_total_log    8.519323e-01 0.14486796  5.880750 4.0841e-09 ***
-L_real_pc_rev_total_log -5.579529e-01 0.08460593 -6.594726 4.2604e-11 ***
-year::1925:region_       6.479177e-01 0.28465364  2.276162 2.2836e-02 *  
-year::1926:region_       6.668387e-01 0.27890925  2.390881 1.6808e-02 *  
-year::1927:region_       3.964363e-01 0.25668185  1.544466 1.2248e-01    
-year::1928:region_       5.339945e-01 0.25648609  2.081963 3.7346e-02 *  
-year::1929:region_       5.692527e-01 0.25996570  2.189722 2.8544e-02 *  
-year::1930:region_       5.469677e-01 0.29209539  1.872565 6.1128e-02 .  
-year::1931:region_       4.031237e-01 0.24866560  1.621148 1.0499e-01    
-year::1932:region_       3.198376e-01 0.25027694  1.277935 2.0127e-01    
-year::1933:region_       2.369733e-01 0.27449086  0.863319 3.8796e-01    
-year::1934:region_       1.832285e-01 0.23955587  0.764867 4.4435e-01    
-year::1935:region_       2.984076e-01 0.24765945  1.204911 2.2824e-01    
-year::1936:region_       3.200928e-01 0.26514506  1.207237 2.2734e-01    
-year::1937:region_       4.141695e-01 0.30078007  1.376985 1.6852e-01    
-year::1938:region_       3.727195e-01 0.24739442  1.506580 1.3192e-01    
-year::1941:region_       5.010396e-01 0.21802303  2.298104 2.1556e-02 *  
-year::1942:region_       5.673636e-01 0.26869545  2.111549 3.4725e-02 *  
-leverage:post_detail::1 -8.938957e-02 0.04836219 -1.848336 6.4554e-02 .  
-leverage:post_detail::3 -1.753485e-01 0.06693490 -2.619687 8.8010e-03 ** 
-leverage:post_detail::4 -3.456015e-01 0.08373203 -4.127471 3.6678e-05 ***
-leverage:post_detail::5 -2.335362e-01 0.12062987 -1.935973 5.2871e-02 .  
-... 24 variables were removed because of collinearity (post_detail::1,
-post_detail::3 and 22 others [full set in $collin.var])
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-Log-Likelihood: -24,234.4   Adj. Pseudo R2: 0.573735
-           BIC:  51,184.1     Squared Cor.: 0.717638
+Top service-level results (1929-1933 and 1934-1938):
+   service    period      estimate          se     p_value
+1    Other 1929-1933 -0.1177749796 0.075200017 0.118547280
+2  Charity 1929-1933 -0.1116969603 0.075567589 0.140809449
+3    Total 1929-1933 -0.0230736569 0.008889004 0.009983503
+4       Pp 1929-1933 -0.0205356793 0.013077721 0.117585208
+5      Gen 1929-1933 -0.0021555790 0.013762743 0.875664455
+6   School 1929-1933  0.0076830095 0.022925339 0.737846477
+7     Road 1929-1933  0.0082838824 0.015145640 0.584922421
+8      Rec 1929-1933  0.0155241759 0.024302388 0.523538272
+9   Health 1929-1933  0.0167838833 0.033397278 0.615711010
+10 Charity 1934-1938 -0.1539983286 0.076050855 0.044081811
+11   Total 1934-1938 -0.0396758793 0.015757122 0.012414328
+12   Other 1934-1938 -0.0331411525 0.073525121 0.652554170
+13      Pp 1934-1938 -0.0141271671 0.017458019 0.419146999
+14  School 1934-1938 -0.0005149076 0.025574950 0.983955383
+15     Gen 1934-1938  0.0032938414 0.019334671 0.864862122
+16    Road 1934-1938  0.0038414340 0.024103563 0.873509806
+17  Health 1934-1938  0.0124152480 0.046976321 0.791771137
+18     Rec 1934-1938  0.0297505294 0.038538847 0.440860190
 
-=== TABLE IV PANEL B: Sample Size ===
-Final N: 4039 
-Outcome: real_pc_maint_dep_total_log (logged maintenance & depreciation)
-The variables 'post_detail::1', 'post_detail::3', 'post_detail::4',
-'post_detail::5', 'leverage', 'year::1925' and 17 others have been removed
-because of collinearity (see $collin.var).
-Warning message:
-The VCOV matrix is not positive semi-definite and was 'fixed' (see ?vcov). 
-
-=== TABLE IV, PANEL B: debt_to_rev29_lev_moody_std ===
-Outcome: real_pc_maint_dep_total_log (OLS)
-
-OLS estimation, Dep. Var.: real_pc_maint_dep_total_log
-Observations: 4,039
-Fixed-effects: id_: 257,  year: 17
-Standard-errors: Clustered (id_) 
-                             Estimate Std. Error   t value  Pr(>|t|)    
-year::1925:pop_30        5.630000e-08 0.00000114  0.049471 0.9605823    
-year::1926:pop_30        4.647000e-08 0.00000114  0.040798 0.9674886    
-year::1927:pop_30        4.185000e-08 0.00000114  0.036640 0.9708009    
-year::1928:pop_30        3.931000e-08 0.00000114  0.034412 0.9725758    
-year::1929:pop_30        4.870000e-08 0.00000114  0.042637 0.9660240    
-year::1930:pop_30        2.918000e-08 0.00000114  0.025527 0.9796547    
-year::1931:pop_30        7.182000e-08 0.00000114  0.062809 0.9499679    
-year::1932:pop_30        3.247000e-08 0.00000114  0.028395 0.9773691    
-year::1933:pop_30       -1.480000e-09 0.00000114 -0.001291 0.9989709    
-year::1934:pop_30        1.148000e-08 0.00000114  0.010037 0.9919999    
-year::1935:pop_30       -4.658000e-08 0.00000114 -0.040733 0.9675403    
-year::1936:pop_30       -1.863000e-08 0.00000114 -0.016296 0.9870113    
-year::1937:pop_30        3.630000e-08 0.00000114  0.031732 0.9747105    
-year::1938:pop_30        1.740000e-08 0.00000114  0.015206 0.9878797    
-year::1941:pop_30        7.084000e-08 0.00000114  0.062015 0.9505994    
-year::1942:pop_30        2.689000e-08 0.00000114  0.023564 0.9812190    
-year::1943:pop_30       -6.486000e-08 0.00000115 -0.056583 0.9549214    
-year::1925:pop_20_30     2.915279e-01 0.12216754  2.386296 0.0177462 *  
-year::1926:pop_20_30     2.703151e-01 0.10305550  2.623005 0.0092386 ** 
-year::1927:pop_20_30     2.220303e-01 0.08177424  2.715162 0.0070751 ** 
-year::1928:pop_20_30     2.202787e-01 0.08831745  2.494170 0.0132567 *  
-year::1929:pop_20_30     2.460552e-01 0.08196479  3.001963 0.0029477 ** 
-year::1930:pop_20_30     2.105675e-01 0.08064115  2.611167 0.0095558 ** 
-year::1931:pop_20_30     1.830907e-01 0.07895325  2.318976 0.0211841 *  
-year::1932:pop_20_30     9.640288e-02 0.06929347  1.391226 0.1653648    
-year::1933:pop_20_30     3.141976e-02 0.06963186  0.451227 0.6522082    
-year::1934:pop_20_30     2.120048e-02 0.07381553  0.287209 0.7741847    
-year::1935:pop_20_30     4.285248e-02 0.07144201  0.599822 0.5491555    
-year::1936:pop_20_30     4.767299e-02 0.07293036  0.653678 0.5139059    
-year::1937:pop_20_30     7.342575e-02 0.07087973  1.035920 0.3012169    
-year::1938:pop_20_30     1.108231e-01 0.06900596  1.605993 0.1095083    
-year::1941:pop_20_30     1.070707e-01 0.05203119  2.057817 0.0406203 *  
-year::1942:pop_20_30     8.663503e-02 0.04341364  1.995572 0.0470402 *  
-real_pc_rev_total_log    4.049083e-01 0.03512587 11.527355 < 2.2e-16 ***
-L_real_pc_rev_total_log  1.269920e-01 0.04302261  2.951750 0.0034530 ** 
-year::1925:region_       6.888805e-02 0.02834299  2.430514 0.0157650 *  
-year::1926:region_       6.757149e-02 0.02459218  2.747682 0.0064285 ** 
-year::1927:region_       7.215444e-02 0.02330016  3.096735 0.0021744 ** 
-year::1928:region_       8.002387e-02 0.02408307  3.322826 0.0010212 ** 
-year::1929:region_       3.819292e-02 0.02248433  1.698646 0.0906008 .  
-year::1930:region_       3.737364e-02 0.02404591  1.554262 0.1213573    
-year::1931:region_       6.093519e-02 0.02220936  2.743671 0.0065052 ** 
-year::1932:region_       6.012611e-02 0.02195004  2.739226 0.0065913 ** 
-year::1933:region_       1.929502e-02 0.02400765  0.803703 0.4223140    
-year::1934:region_       2.506068e-02 0.02246776  1.115406 0.2657223    
-year::1935:region_       3.526332e-02 0.02301346  1.532291 0.1266855    
-year::1936:region_       9.068517e-03 0.02431569  0.372949 0.7094949    
-year::1937:region_       2.292381e-02 0.02509687  0.913413 0.3618847    
-year::1938:region_      -6.085904e-04 0.01817336 -0.033488 0.9733115    
-year::1941:region_      -1.467700e-02 0.01200107 -1.222975 0.2224639    
-year::1942:region_       4.149700e-03 0.01001094  0.414517 0.6788429    
-leverage:post_detail::1  1.106109e-02 0.02433479  0.454538 0.6498267    
-leverage:post_detail::3 -2.281978e-02 0.00897940 -2.541348 0.0116334 *  
-leverage:post_detail::4 -3.955812e-02 0.01575744 -2.510441 0.0126754 *  
-leverage:post_detail::5 -5.897887e-02 0.02328734 -2.532659 0.0119183 *  
-... 23 variables were removed because of collinearity (post_detail::1,
-post_detail::3 and 21 others [full set in $collin.var])
----
-Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-RMSE: 0.13778     Adj. R2: 0.945241
-                Within R2: 0.366474
-
-=== PANEL A SUMMARY (Poisson) ===
-leverage x 1924-1926: -0.089 (0.048) 
-leverage x 1929-1933: -0.175 (0.067) 
-leverage x 1934-1938: -0.346 (0.084) Ô£ô EXACT MATCH
-leverage x 1941-1943: -0.234 (0.121) Ô£ô EXACT MATCH
-N: 4039 | R-¦: 0.718 NA NA 0.579 0.574 NA NA 0.089 0.087 
-
-=== PANEL B SUMMARY (OLS) ===
-leverage x 1924-1926: 0.011 (0.024) 
-leverage x 1929-1933: -0.023 (0.009) 
-leverage x 1934-1938: -0.040 (0.016) 
-leverage x 1941-1943: -0.059 (0.023) 
-N: 4039 | R-¦: 0.950 0.950 0.945 1.605 1.518 0.366 0.357 -0.681 -0.641 
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_IV_both_panels_col3.csv
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_IV_both_panels_col3.tex
-null device 
-          1 
-Wrote: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/table_IV_both_panels_col3.png
-
-Ô£ô Table IV complete with both panels (Poisson + OLS)
-  Panel A uses fepois() for count data
-  Panel B uses feols() for logged outcome
-Result: SUCCESS
+Placebo pre-trend coefficients:
+  service placebo_coef         se    p_value   N
+1  Health -0.072728608 0.05382658 0.17797590 920
+2     Rec -0.012867903 0.03707412 0.72885413 885
+3   Total -0.004957405 0.01831397 0.78687347 920
+4 Charity -0.003041945 0.03719942 0.93491936 697
+5      Pp -0.001153210 0.01196939 0.92332957 920
+6    Road  0.005716842 0.01248417 0.64747141 856
+7     Gen  0.016410014 0.01275522 0.19955622 920
+8  School  0.048658852 0.02722267 0.07536583 800
+9   Other  0.077369496 0.07425894 0.29860206 857
+Result: SUCCESS 
 
 [STEP 3] Session info
 R version 4.5.2 (2025-10-31 ucrt)
@@ -436,11 +231,31 @@ tzcode source: internal
 attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
+other attached packages:
+[1] stringr_1.6.0    flextable_0.9.10 purrr_1.2.0      tibble_3.3.0    
+[5] fixest_0.13.2    dplyr_1.1.4      haven_2.5.5     
+
 loaded via a namespace (and not attached):
-[1] compiler_4.5.2
+ [1] sandwich_3.1-1          generics_0.1.4          tidyr_1.3.2            
+ [4] fontLiberation_0.1.0    xml2_1.5.1              stringi_1.8.7          
+ [7] dreamerr_1.5.0          lattice_0.22-7          hms_1.1.4              
+[10] digest_0.6.39           magrittr_2.0.4          evaluate_1.0.5         
+[13] grid_4.5.2              fastmap_1.2.0           zip_2.3.3              
+[16] Formula_1.2-5           fontBitstreamVera_0.1.1 stringmagic_1.2.0      
+[19] numDeriv_2016.8-1.1     textshaping_1.0.4       cli_3.6.5              
+[22] rlang_1.1.6             fontquiver_0.2.1        withr_3.0.2            
+[25] gdtools_0.4.4           tools_4.5.2             officer_0.7.2          
+[28] tzdb_0.5.0              uuid_1.2-1              forcats_1.0.1          
+[31] vctrs_0.6.5             R6_2.6.1                zoo_1.8-15             
+[34] lifecycle_1.0.4         ragg_1.5.0              pkgconfig_2.0.3        
+[37] pillar_1.11.1           data.table_1.18.0       glue_1.8.0             
+[40] Rcpp_1.1.0              systemfonts_1.3.1       xfun_0.54              
+[43] tidyselect_1.2.1        knitr_1.50              htmltools_0.5.9        
+[46] nlme_3.1-168            rmarkdown_2.30          readr_2.1.6            
+[49] compiler_4.5.2          askpass_1.2.1           openssl_2.3.4          
 
 ============================================================
 Run finished.
-Log file: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/run_log.txt
-Status file: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/run_status.csv
+Log file: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/run_log.txt 
+Status file: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar/output/run_status.csv 
 ============================================================

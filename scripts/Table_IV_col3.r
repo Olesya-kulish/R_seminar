@@ -1,9 +1,29 @@
-# Table IV Column (3)
-# Panel A: FE-OLS on real_pc_maint_dep_total_log
-# Panel B: PPML on real_pc_outlay
+##############################################################################
+# Table IV, Column (3): Financial Leverage and Public Goods Provision
+# Purpose:
+#   - Difference-in-differences estimation of leverage impact on city spending
+#   - Treatment: 1929 leverage (debt/revenue, standardized, Moody-adjusted)
+#   - Time periods: 1924-1943 (excluding 1927-1928, 1939-1940)
+# Panel specifications:
+#   - Panel A: FE-OLS on real per capita maintenance & depreciation (logged)
+#   - Panel B: PPML on real per capita capital outlay (level)
+# Output:
+#   - CSV with interaction coefficients and goodness-of-fit statistics
+#   - PNG formatted table images (separate for Panel A and Panel B)
+# Note on replication quality:
+#   - Most coefficients match closely (typically within ±0.01)
+#   - One persistent gap remains in Panel B (1941-43), where R estimates are
+#     more negative than the reference table despite matching core controls.
+##############################################################################
+
+# Load required packages
+library(haven)    # Read Stata .dta files
+library(dplyr)    # Data manipulation
+library(fixest)   # Fixed effects regression (feols, fepois)
+library(stringr)  # String pattern matching
 
 # ============================================
-# Packages
+# Packages (ensure installation)
 # ============================================
 
 pkgs <- c("haven", "dplyr", "fixest", "stringr")
@@ -11,30 +31,30 @@ need <- pkgs[!sapply(pkgs, requireNamespace, quietly = TRUE)]
 if (length(need) > 0) install.packages(need, repos = "https://cloud.r-project.org")
 invisible(lapply(pkgs, library, character.only = TRUE))
 
-# ============================================
-# 1) Read data
-# ============================================
+################################################################################
+# Data preparation
+################################################################################
 
+# Load original city-level replication data
 df <- haven::read_dta("data/replication-data-city.dta")
 stopifnot("check_moody" %in% names(df))
 
-# ============================================
-# 2) Preprocess
-# ============================================
-
+# Apply Moody's bond quality filter and prepare panel structure
+# Filter: Keep only cities with valid Moody leverage data (within ±0.2 range)
 df0 <- df %>%
   dplyr::filter(check_moody < 0.2, check_moody > -0.2) %>%
   dplyr::mutate(
-    id_ = as.factor(id_),
-    year = as.integer(year),
-    region = as.factor(region_),
-    post_detail = as.integer(post_detail)
+    id_ = as.factor(id_),              # City identifier
+    year = as.integer(year),           # Year (1924-1943)
+    region = as.factor(region_),       # Census region
+    post_detail = as.integer(post_detail)  # Period indicator (1=1924-26, 2=1927-28, etc.)
   )
 
-# ============================================
-# 3) Helpers
-# ============================================
+################################################################################
+# Helper functions for coefficient extraction and formatting
+################################################################################
 
+# Add significance stars based on p-values
 pstars <- function(p) {
   s <- rep("", length(p))
   ok <- !is.na(p)
@@ -44,6 +64,7 @@ pstars <- function(p) {
   s
 }
 
+# Extract outcome variable mean and SD from fixest model
 y_stats_fixest <- function(m) {
   y <- as.numeric(m$fitted.values) + as.numeric(m$residuals)
   c(mean = mean(y, na.rm = TRUE), sd = sd(y, na.rm = TRUE))
@@ -54,11 +75,13 @@ safe_wr2 <- function(m) {
   as.numeric(out)
 }
 
+# Extract pseudo R-squared (for Poisson models)
 safe_pr2 <- function(m) {
   out <- tryCatch(fixest::fitstat(m, "pr2"), error = function(e) NA_real_)
   as.numeric(out)
 }
 
+# Extract the 4 interaction coefficients (periods 1, 3, 4, 5) from fixest model
 extract_4_inter <- function(m, testvar) {
   ct <- fixest::coeftable(m)
   rn <- rownames(ct)
@@ -82,6 +105,7 @@ extract_4_inter <- function(m, testvar) {
   )
 }
 
+# Period labels for output tables
 term_show <- c(
   "moodyleverage x 1924-1926",
   "moodyleverage x 1929-1933",
@@ -89,17 +113,20 @@ term_show <- c(
   "moodyleverage x 1941-1943"
 )
 
-# ============================================
-# Column 3 only: debt_to_rev29_lev_moody_std
-# ============================================
+################################################################################
+# Regression analysis: Column 3 (Debt/Revenue leverage measure)
+################################################################################
 
 a_name <- "debt_to_rev29_lev"
 testvar <- paste0(a_name, "_moody_std")
 stopifnot(testvar %in% names(df0))
 
-# ============================================
-# Panel A: FE-OLS (Table IV A) — outcome real_pc_maint_dep_total_log
-# ============================================
+################################################################################
+# Panel A: Maintenance & Depreciation (FE-OLS)
+################################################################################
+# Outcome: log(real per capita maintenance + depreciation)
+# Estimator: Fixed effects OLS with city and year FE
+# Specification: DiD with interaction between post_detail periods and leverage
 
 make_fml_A <- function(tv) {
   as.formula(paste0(
@@ -144,14 +171,18 @@ gofA <- data.frame(
 tabA <- dplyr::bind_rows(rowA, gofA)
 colnames(tabA) <- c("", "Debt/Rev (FE-OLS)")
 
-# ============================================
-# Panel B: PPML (Table IV B) — outcome real_pc_outlay
-# ============================================
+################################################################################
+# Panel B: Capital Outlay (PPML)
+################################################################################
+# Outcome: real per capita capital outlay (level, not logged)
+# Estimator: Poisson pseudo-maximum likelihood with city and year FE
+# Specification: DiD with interaction between post_detail periods and leverage
 
 make_fml_B <- function(tv) {
   as.formula(paste0(
     "real_pc_outlay ~ ",
     "i(post_detail, ref = 2) * ", tv, " + ",
+    "i(year, ref = 1928) + ",
     "i(year, pop_30, ref = 1928) + ",
     "i(year, pop_20_30, ref = 1928) + ",
     "real_pc_rev_total_log + l(real_pc_rev_total_log, 1) + ",
@@ -189,9 +220,9 @@ gofB <- data.frame(
 tabB <- dplyr::bind_rows(rowB, gofB)
 colnames(tabB) <- c("", "Debt/Rev (PPML)")
 
-# ============================================
-# Write outputs
-# ============================================
+################################################################################
+# Generate outputs: CSV files and PNG visualizations
+################################################################################
 
 dir.create("output", showWarnings = FALSE)
 
@@ -200,40 +231,20 @@ cat("\nPanel A (FE-OLS) N:", stats::nobs(mA), "| R-sq(within):", sprintf("%.3f",
 cat("Panel B (PPML)  N:", stats::nobs(mB), "| R-sq(pseudo):", sprintf("%.3f", safe_pr2(mB)), "\n")
 
 # --------------------------------------------
-# CSV outputs (coef + se + stats)
+# CSV outputs (formatted table matching PNG content)
 # --------------------------------------------
+write.csv(tabA, file = "output/table_IV_col3_panelA.csv", row.names = FALSE)
+write.csv(tabB, file = "output/table_IV_col3_panelB.csv", row.names = FALSE)
 
-csv_coef <- data.frame(
-  panel = rep(c("A", "B"), each = 4),
-  estimator = rep(c("FE-OLS", "PPML"), each = 4),
-  period = rep(c("1924-1926", "1929-1933", "1934-1938", "1941-1943"), times = 2),
-  coef = c(mA$coeftable[paste0(testvar, ":post_detail::", c(1,3,4,5)), "Estimate"],
-           mB$coeftable[paste0(testvar, ":post_detail::", c(1,3,4,5)), "Estimate"]),
-  se = c(mA$coeftable[paste0(testvar, ":post_detail::", c(1,3,4,5)), "Std. Error"],
-         mB$coeftable[paste0(testvar, ":post_detail::", c(1,3,4,5)), "Std. Error"])
-)
-
-csv_stats <- data.frame(
-  panel = c("A", "B"),
-  estimator = c("FE-OLS", "PPML"),
-  N = c(stats::nobs(mA), stats::nobs(mB)),
-  R2 = c(safe_wr2(mA), safe_pr2(mB)),
-  y_mean = c(ysA["mean"], ysB["mean"]),
-  y_sd = c(ysA["sd"], ysB["sd"])
-)
-
-write.csv(csv_coef, file = "output/table_IV_col3_friend_coefs.csv", row.names = FALSE)
-write.csv(csv_stats, file = "output/table_IV_col3_friend_stats.csv", row.names = FALSE)
-
-message("Wrote: ", normalizePath("output/table_IV_col3_friend_coefs.csv", winslash = "/"))
-message("Wrote: ", normalizePath("output/table_IV_col3_friend_stats.csv", winslash = "/"))
+message("Wrote: ", normalizePath("output/table_IV_col3_panelA.csv", winslash = "/"))
+message("Wrote: ", normalizePath("output/table_IV_col3_panelB.csv", winslash = "/"))
 
 # --------------------------------------------
 # PNG output
 # --------------------------------------------
 
-png_panelA <- "output/table_IV_col3_panelA_native.png"
-png_panelB <- "output/table_IV_col3_panelB_native.png"
+png_panelA <- "output/table_IV_col3_panelA.png"
+png_panelB <- "output/table_IV_col3_panelB.png"
 
 # Extract raw coefficients for display
 get_coef_val <- function(mod, period) {
@@ -270,9 +281,9 @@ b3 <- get_coef_val(mB, 3)
 b4 <- get_coef_val(mB, 4)
 b5 <- get_coef_val(mB, 5)
 
-# ============================================
-# PNG for Panel A only
-# ============================================
+################################################################################
+# PNG visualization: Panel A (Maintenance & Depreciation)
+################################################################################
 
 png(
   png_panelA,
@@ -375,9 +386,9 @@ text(0.5, y_pos - 0.02, "Standard errors (clustered at city level) in parenthese
 dev.off()
 message("Wrote: ", normalizePath(png_panelA, winslash = "/"))
 
-# ============================================
-# PNG for Panel B only
-# ============================================
+################################################################################
+# PNG visualization: Panel B (Capital Outlay)
+################################################################################
 
 png(
   png_panelB,

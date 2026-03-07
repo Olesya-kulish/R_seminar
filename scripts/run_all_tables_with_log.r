@@ -58,7 +58,8 @@ script_list <- c(
   "scripts/Table_1.r",
   "scripts/Table_II.r",
   "scripts/Table_III_A.r",
-  "scripts/Table_IV_PanelAB.r"
+  "scripts/Table_IV_col3.r",
+  "scripts/Extra_task_service_level_and_placebo.r"
 )
 
 run_results <- lapply(script_list, function(s) {
