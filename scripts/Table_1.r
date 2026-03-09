@@ -8,6 +8,11 @@
 #   - PNG images of formatted tables
 ##############################################################################
 
+##############################################################################
+# Panel A
+##############################################################################
+
+
 # Clear workspace for fresh environment
 rm(list = ls())
 
@@ -115,7 +120,7 @@ dir.create("output", showWarnings = FALSE)
 # Write Panel A summary statistics as CSV (machine-readable)
 write.csv(out_fmt, file = file.path("output", "summary_stats_city1.csv"), row.names = FALSE)
 
-# Export as PNG image for easy human inspection
+# Export as PNG image for easy inspection
 ft <- flextable(out_fmt)
 save_as_image(ft, path = file.path("output", "summary_stats_city1.png"))
 
