@@ -38,7 +38,7 @@ cat("Timestamp:", format(Sys.time(), "%Y-%m-%d %H:%M:%S"), "\n")
 cat("Working directory:", normalizePath(getwd(), winslash = "/"), "\n")
 cat("============================================================\n\n")
 
-# Requirement from instructor: start by loading original replication data
+# loading original replication data
 cat("[STEP 1] Loading original replication-package data...\n")
 city_path <- file.path("data", "replication-data-city.dta")
 micro_path <- file.path("data", "replication-data-micro.dta")
