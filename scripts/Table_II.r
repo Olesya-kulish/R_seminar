@@ -72,7 +72,7 @@ cat("\n=== Table II: Column 5 ===\n")
 print(summary(m5))
 
 ################################################################################
-# Export results as CSV (machine-readable format)
+# Export results as CSV
 ################################################################################
 
 # Helper function to extract coefficients + SEs + N from one model
