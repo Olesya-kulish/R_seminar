@@ -1,6 +1,6 @@
 ============================================================
 R REPLICATION RUN LOG
-Timestamp: 2026-03-10 18:24:34 
+Timestamp: 2026-03-10 18:27:52 
 Working directory: C:/Users/olesy/OneDrive/Dokumente/uni/R_Seminar/R_seminar 
 ============================================================
 
